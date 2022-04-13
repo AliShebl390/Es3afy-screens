@@ -1,0 +1,157 @@
+@media screen and (min-width: 320px) {
+  .content-fp {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+  }
+  .content-rp {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    transform: translateX(0);
+    left: 0;
+  }
+
+  .first-use-container img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .container {
+    width: 750px;
+  }
+  .sign-up {
+    top: 20%;
+  }
+  .content-container-2 {
+    top: 19%;
+    transform: translateY(70%);
+  }
+  .sign-active {
+    transform: translateY(0);
+  }
+ 
+  .content-container-2 {
+    top: 19%;
+    transform: translateY(70%);
+  }
+  .sign-active {
+    transform: translateY(0);
+  }
+  .sign-in-h1{
+    padding-top: 4vh;
+  }
+}
+
+/* Medium */
+@media (min-width: 900px) {
+  .container {
+    width: 970px;
+  }
+  .phone-img {
+    max-width: 5%;
+  }
+  .sos-contact,
+  .sos-contact1,
+  .sos-contact2,
+  .sos-contact3,
+  .sos-contact4,
+  .sos-contact5 {
+    max-width: 7%;
+  }
+  .emergency-section img {
+    max-width: 50%;
+    max-height: none;
+  }
+
+  .profile-section2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .request-section {
+    align-items: center;
+    justify-content: center;
+  }
+   .first-use-container{
+    justify-content: flex-start;
+  }
+      .first-use-container img{
+        margin-top: 100px;
+  max-width: 70%;
+}
+.sign-in-h1{
+    padding-top: 40px;
+  }
+    .sign-up {
+    top: 15%;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .cont img {
+    max-width: 10%;
+  }
+  .cont {
+    width: max-content;
+  }
+  /*-----*/
+
+  .sos-contact,
+  .sos-contact1,
+  .sos-contact2,
+  .sos-contact3,
+  .sos-contact4,
+  .sos-contact5 {
+    max-width: 5%;
+  }
+  .emergency-section img {
+    max-width: 25%;
+    max-height: none;
+  }
+
+  /* mh*/
+  .section-1 img {
+    max-width: 5%;
+  }
+  /*--*/
+
+  .responders-main img {
+    max-width: 40%;
+  }
+  .first-section {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .first-section img {
+    margin-right: 0;
+  }
+  .first-section h3 {
+    margin-right: 0;
+  }
+
+  .request-section {
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-section2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .first-use-container{
+    justify-content: flex-start;
+  }
+      .first-use-container img{
+        margin-top: 100px;
+  max-width: 30%;
+}
+ .sign-up {
+    top: 14%;
+  }
+}
