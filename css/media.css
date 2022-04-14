@@ -77,6 +77,9 @@
   .sign-active {
     transform: translateY(0);
   }
+  .sos-section i {
+    top: 90%;
+  }
 }
 
 @media (max-height: 568px) {
