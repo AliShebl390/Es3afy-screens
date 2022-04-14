@@ -78,10 +78,14 @@
     transform: translateY(0);
   }
   .sign-up{
-    top: 23% ;
+    top: 20% ;
   }
   .sign-up-h1{
     margin-bottom: 4vh;
+  }
+  .content-container-2{
+    top: 25%;
+    transform: translateY(65%);
   }
 }
 
