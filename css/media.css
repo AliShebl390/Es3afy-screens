@@ -78,13 +78,13 @@
     transform: translateY(0);
   }
   .sign-up{
-    top: 10% ;
+    top: 13% ;
   }
 }
 
 @media (max-height: 568px) {
   .sign-up {
-    top: 0;
+    top: 10%;
   }
 
   .content-container-2 {
