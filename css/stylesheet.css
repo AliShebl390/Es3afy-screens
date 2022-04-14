@@ -148,7 +148,7 @@ a {
 .sign-up{ 
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 10%;
   transform: translateX(-50%); 
   height: 100vh;
   display: flex;

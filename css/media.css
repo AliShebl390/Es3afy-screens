@@ -84,7 +84,7 @@
 
 @media (max-height: 568px) {
   .sign-up {
-    top: 10%;
+    top: 0;
   }
 
   .content-container-2 {
