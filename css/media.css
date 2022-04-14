@@ -77,11 +77,14 @@
   .sign-active {
     transform: translateY(0);
   }
+  .sign-up{
+    top: 13% ;
+  }
 }
 
 @media (max-height: 568px) {
   .sign-up {
-    top: 13%;
+    top: 0;
   }
 
   .content-container-2 {
@@ -239,7 +242,7 @@
     max-width: 30%;
   }
   .sign-up {
-    top: 14%;
+    top: 13%;
   }
   .rating-header {
     align-items: center;
