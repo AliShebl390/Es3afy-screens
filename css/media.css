@@ -16,7 +16,7 @@
     max-width: 100%;
   }
   .content-container-2 {
-    transform: translateY(60%);
+    transform: translateY(70%);
   }
   .admin-header {
     transform: translateX(0);
@@ -78,7 +78,7 @@
     transform: translateY(0);
   }
   .sign-up{
-    top: 0% ;
+    top: 13% ;
   }
   .sign-up-h1{
     margin-bottom: 5px;
