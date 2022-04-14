@@ -77,8 +77,9 @@ a {
   height: 300px;
 }
 .second-image-first-use {
-  width: 450px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 .third-image-first-use {
   width: 300px;
