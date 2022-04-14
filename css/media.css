@@ -282,7 +282,10 @@
     top: 15%;
   }
   .sign-up h1 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+  }
+  .content-container-2{
+    transform: translateY(65%);
   }
 }
 /* admin */
