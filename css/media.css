@@ -85,14 +85,14 @@
   }
 }
 
-@media (max-height: 568px) {
+@media  (max-height: 568px) {
   .sign-up {
-    top: 0;
+    top: 0%;
   }
 
   .content-container-2 {
-    top: 20%;
-    transform: translateY(70%);
+    top: 10%;
+    transform: translateY(80%);
   }
   .inputs-container {
     margin-top: 50px;
@@ -112,6 +112,10 @@
     width: 200px;
     height: 200px;
   }
+  .sign-up-h1{
+   margin-bottom: 25px;
+  }
+  
 }
 
 @media (min-width: 600px) {
@@ -276,7 +280,7 @@
 @media screen and (min-height: 914px) {
   .content-container-2 {
     top: 20%;
-    transform: translateY(70%);
+    transform: translateY(80%);
   }
   .sign-up {
     top: 15%;
@@ -285,7 +289,7 @@
     margin-bottom: 20px;
   }
   .content-container-2{
-    transform: translateY(65%);
+    transform: translateY(70%);
   }
 }
 /* admin */
