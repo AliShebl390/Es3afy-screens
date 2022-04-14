@@ -1222,6 +1222,7 @@ i {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  padding: 1rem;
 }
 .responders-header i {
   margin-top: 15px;
