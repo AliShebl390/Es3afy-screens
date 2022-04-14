@@ -149,6 +149,11 @@ a {
   flex-direction: column;
   gap: 10px;
 }
+.sign-up .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .sign-up a {
   align-self: center;
 }
