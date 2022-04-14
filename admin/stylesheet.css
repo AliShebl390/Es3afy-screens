@@ -17,12 +17,16 @@
 }
 html {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
+
 }
 body {
   font-family: "Work Sans", sans-serif;
   text-transform: capitalize;
   background-color: #eee;
   overflow: hidden;
+  height: -webkit-fill-available;
+
 }
 a {
   text-decoration: none;
@@ -796,6 +800,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  height: -webkit-fill-available;
+
 }
 
 .tracking-header button {
