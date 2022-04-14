@@ -79,11 +79,12 @@ a {
 .second-image-first-use {
   width: 250px;
   height: 250px;
-  object-fit: cover;
+  
 }
 .third-image-first-use {
-  width: 300px;
+  width: 400px;
   height: 300px;
+  object-fit: cover;
 }
 
 .first-use-container a {
