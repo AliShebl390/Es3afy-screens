@@ -5,6 +5,17 @@
   --sm-font: 1rem;
   --md-font: 1.37rem;
 }
+.button-custom {
+  width: 190px;
+  height: 41px;
+  border-radius: 5px;
+  background-color: #00adb5;
+  color: #eee;
+  border: none;
+  font-size: 1.37rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 /* End variables */
 /* Start Global Rules */
 * {
@@ -21,7 +32,8 @@ body {
   font-family: "Work Sans", sans-serif;
   text-transform: capitalize;
   background-color: #eee;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -58,10 +70,22 @@ a {
   gap: 30px;
   font-size: 16px;
   text-align: center;
+  padding: 10px;
 }
-.first-use-container img{
-  max-width: 50%;
+.first-image-first-use{
+  width: 300px;
+  height: 300px;
 }
+.second-image-first-use{
+  width: 450px;
+  height: 300px;
+}
+.third-image-first-use{
+  width: 300px;
+  height: 300px;
+}
+
+
 
 .first-use-container a{
   position: absolute;
@@ -105,37 +129,37 @@ a {
 }
 /*End choose user*/
 /* Start sign-up/in -- forget reset password*/
-.sign-container {
+.sign-container{
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
-.content-container {
+.content-container{
   width: 100%;
   height: 100%;
-  position: relative;
+  position: relative; 
   color: #222831;
 }
-.sign-up {
+.sign-up{ 
   position: absolute;
   left: 50%;
   top: 25%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); 
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-.sign-up-h1 {
+.sign-up-h1{
   text-align: center;
-  cursor: pointer;
+  cursor: pointer;;
   margin-bottom: 3vh;
   transition: all 1s ease-in;
   font-size: 28px;
 }
-.content-container-2 {
+.content-container-2{
   top: 31%;
   height: 100vh;
   width: 100%;
@@ -143,15 +167,15 @@ a {
   position: absolute;
   border-radius: 60% / 10%;
   background-color: #222831;
-  transform: translateY(60%);
+  transform: translateY(60%);      
   transition: transform 1s ease-in;
 }
-.content-container-3 {
+.content-container-3{
   width: 100%;
   height: 100%;
   position: relative;
 }
-.inputs-container {
+.inputs-container{
   width: 400px;
   height: 40vh;
   position: absolute;
@@ -164,19 +188,20 @@ a {
   flex-direction: column;
   gap: 30px;
 }
-.sign-in {
-  height: 50%;
+.sign-in{
+  height:50%;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); 
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 }
-.sign-in-h1 {
+.sign-in-h1{
   position: absolute;
   top: 0;
   display: block;
@@ -186,25 +211,14 @@ a {
   font-size: 30px;
   transition: 1s ease-in-out;
   cursor: pointer;
-  padding-top: 50px;
+  padding-top: 2vh;
   font-size: 28px;
 }
-.h1-scale {
+.h1-scale{
   transform: scale(1.4);
 }
-.sign-active {
+.sign-active{
   transform: translateY(0);
-}
-.button-custom {
-  width: 175px;
-  height: 41px;
-  border-radius: 5px;
-  background-color: #00adb5;
-  color: #eee;
-  border: none;
-  font-size: 1.37rem;
-  font-weight: bold;
-  text-transform: capitalize;
 }
 .custom-input {
   background-color: #dadada;
@@ -216,7 +230,7 @@ a {
   text-align: left;
   color: #222831;
 }
-::placeholder {
+::placeholder{
   color: #222831;
 }
 /* End sign-up/in -- forget reset password */
@@ -238,6 +252,7 @@ a {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  
 }
 .header {
   padding: 1rem;
@@ -254,20 +269,24 @@ i {
   padding-right: 15px;
   display: flex;
   flex-direction: column;
+  
   gap: 30px;
 }
 .main h1 {
   padding-bottom: 10px;
 }
 .main p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   text-align: left;
   line-height: 1.6;
 }
-.main button {
-  width: 10%;
+.main a{
+ margin-right: auto;
+ width: 190px;
+ margin-top: 20px;
 }
+
 /* End Forget pass */
 /* Start Creat new password */
 .container-rp {
@@ -278,7 +297,7 @@ i {
   font-size: 1.8rem;
 }
 .content-rp {
-  width: 50vw;
+  width: 100vw;
   height: 80vh;
   background-color: #eee;
   position: absolute;
@@ -299,7 +318,8 @@ i {
   text-align: center;
 }
 .content-rp button {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   
 }
 .container-rp p:last-child {
@@ -325,14 +345,12 @@ i {
 /*Start of medical history*/
 .mh-container {
   padding: 15px;
-  overflow-y: scroll;
   height: 100vh;
 }
 .mh-main {
-  
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
   padding: 1.5rem;
 }
 .section-1{
@@ -352,6 +370,9 @@ i {
 
 .mh-main button{
   margin-top: 1%;
+}
+.mh-main a{
+  margin: 0 auto;
 }
 
 /* End of medical history */
@@ -375,7 +396,7 @@ i {
   padding: 0;
   width: calc(100% / 3 - 5px);
   border: none;
-
+  border-radius: 0;
 }
 .n-id-container .ic-text {
   display: flex;
@@ -412,11 +433,14 @@ i {
   padding-left: 25px;
 }
 .n-id-container .buttons .bt2 button {
-  width: 180px;
+  width: 200px;
   height: 44px;
   background-color: #eee;
   color: var(--dark);
   border: 1px solid var(--dark);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 /* custom upload input */
 .custom-file-input::-webkit-file-upload-button {
@@ -484,10 +508,18 @@ i {
 .ver-bottom button {
   width: 260px;
   height: 60px;
+  border-radius: 5px;
+  background-color: #00ADb5;
+  color: #eee;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 .ver-bottom .ver-resend {
   width: 180px;
   height: 50px;
+  font-size: 1rem;
   background-color: #eee;
   color: #8c8c8c;
   border: 1px solid #8c8c8c;
@@ -520,9 +552,17 @@ i {
   justify-content: center;
   margin-top: 15vh;
 }
+.button-center button{
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* End success */
 /* Start request for user */
 .req-container{
+  max-width: 400px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -580,6 +620,8 @@ i {
 /* End Process */
 /* Start proces Details */
 .details-container{
+  max-width: 400px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -820,9 +862,9 @@ i {
 .sos-contact-container .add-new{
   display: flex;
   gap: 20px;
-  align-items: center;
-  line-height: 1.5;
-}
+  align-items: flex-start;
+  line-height: 1.7;
+  justify-content: center;}
 .sos-contact-container .add-new .text a{
   color: var(--light);
   font-weight: bold;
@@ -834,8 +876,8 @@ i {
   font-size: 1rem;
 }
 .sos-contact-container .add-new .add-c{
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background-color: var(--light);
   border-radius: 50%;
   display: flex;
@@ -852,7 +894,7 @@ i {
   flex-direction: row;
   justify-content: space-between;
   padding: 0 20px 0 20px;
-}
+align-items: center;}
 @media (max-height:670px)
   {.sos-contact-container .contact{
       margin-top: 23px;
@@ -867,7 +909,7 @@ i {
   }
 }
 .sos-contact-container .contact .all-text{
-  margin-left: -100px;
+  margin-left: -56px;
   line-height: 1.5;
 }
 .sos-contact-container .contact .all-text p:first-child{
@@ -889,14 +931,14 @@ i {
   visibility: hidden;
 }
 .custom-file-input2{    
-  width: 50px;
-}
+  width: 60px;
+/* padding-top: 26px; */}
 .custom-file-input2::before {
   content: "+";
   color: #222831;
   font-size: 50px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  marding-top: 5px;height: 60px;
   background-color: var(--light);
   border-radius: 50%;
   display: flex;
@@ -908,7 +950,7 @@ i {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 10vh;
+  gap: 6vh;
   align-items: center;
 }
 .add-new-content .inputs form input{
@@ -948,12 +990,15 @@ i {
 /* End sos contact */
 /* home*/
 .home-container {
-  height: auto;
+  height: calc(100vh);
   width: 100vw;
-  background-color: #fdfdfd;
+  
   display: flex;
   flex-direction: column;
   z-index: -1;
+  overflow: hidden;
+  
+
 }
 .home-header {
   width: 100vw;
@@ -963,6 +1008,7 @@ i {
 }
 .home-header a {
   margin-left: auto;
+  margin-right: 15px;
 }
 .profile-image {
   width: 50px;
@@ -978,7 +1024,7 @@ i {
 
 .emergency-section {
   width: 100vw;
-  height: 40vh;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -986,7 +1032,7 @@ i {
 }
 .emergency-section h1 {
   color: red;
-  margin-top: 20%;
+ 
 }
 
 .emergency-section img {
@@ -1001,16 +1047,18 @@ i {
 }
 .sos-section {
   width: 100vw;
-  height: 50vh;
-
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  
+
 }
 .sos-section i {
   color: red;
-  font-size: 80px;
-  margin-bottom: 20px;
+  font-size: 60px;
+  z-index: 2;
+  position: absolute;
+  top: 85%;
 }
 
 .sos-contact,
@@ -1024,6 +1072,7 @@ i {
   object-fit: cover;
   border-radius: 50%;
   position: absolute;
+  top: 90%;
   z-index: 1;
   opacity: 0;
   transition: 500ms ease-in;
@@ -1106,13 +1155,13 @@ i {
   text-transform: uppercase;
   transform: translateX(-100%);
   transition: all 0.3s ease;
-  text-align: center;
+  
   z-index: 5;
   position: absolute;
   padding: 1rem;
   align-items: center;
   left: 0;
-  width: 50%;
+  width: 100%;
 }
 .nav ol a:last-of-type{
   position: absolute;
@@ -1129,11 +1178,12 @@ i {
   margin-bottom: 25px;
   margin-left: 10px;
   backface-visibility: hidden;
+  font-size: 1.2rem;
 }
 
 .nav a:hover {
   color: white;
-  transform: scale(1.5);
+  transform: scale(1.1);
   border-radius: 50px;
 }
 
@@ -1159,7 +1209,6 @@ i {
 }
 
 /* responders on the way*/
-
 .responders-container {
   width: 100vw;
   height: auto;
@@ -1180,7 +1229,8 @@ i {
 }
 
 .responders-main img {
-  max-width: 90%;
+  width: 250px;
+  height: 150px;
   margin-top: 5%;
 }
 .responders-main h4 {
@@ -1192,18 +1242,18 @@ i {
 }
 
 .responders-main .button1 {
-  font-size: 12px;
-  padding: 1rem;
-  border: var(--light) solid 1px;
-  color: var(--light);
-  font-size: 14px;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
 }
 .responders-main .button2 {
-  background-color: white;
   padding: 1rem;
   border: red solid 1px;
   color: red;
   font-size: 14px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  height: 50px;
 }
 
 /* tracking*/
@@ -1211,29 +1261,30 @@ i {
   height: 100%;
   width: 100%;
 }
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 .tracking-header button {
-  background-color: white;
+  background-color: transparent;
   padding: 0.5rem;
   border: red solid 1px;
   color: red;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 30px;
   margin-left: 30px;
   position: absolute;
   z-index: 1;
-  background-color: transparent;
+  text-transform: capitalize;
 }
-
+.tracking-header button:focus{
+  outline: none;
+}
 .tracking-footer {
   height: auto;
-  background-color: white;
+  background-color: #eeeeee;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -1241,14 +1292,12 @@ body {
   bottom: 0;
   align-items: center;
 }
-
 .first-section img {
   width: 80px;
   height: 80px;
   object-fit: cover;
   border-radius: 50%;
 }
-
 .first-section {
   padding-top: 10px;
   display: flex;
@@ -1268,6 +1317,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: auto;
+  padding-bottom: 10px;
 }
 .text-adjust2 {
   padding: 10px;
@@ -1434,7 +1484,6 @@ body {
 
 .feedback {
   max-width: 360px;
-
   width: 100%;
   padding: 30px;
   border-radius: 8px;
@@ -1445,53 +1494,62 @@ body {
 }
 
 .rating-input {
-  height: 100px;
+  height: 150px;
+ 
 }
 
 .rating-button {
   margin-top: 20px;
+  padding: .5rem;
 }
 
 /*profile*/
 
 .profile-container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
+  gap: 60px;
+
+  
 }
 
 .profile-section1 {
   display: flex;
+  position: relative;
+  width: 100vw;
   align-items: center;
   justify-content: center;
-  position: relative;
-  margin-top: 10%;
 }
 
+
 .profile-section1 img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ border-radius: 50%;
 }
 
 .profile-section1 i {
-  transform: translateY(300%);
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-250%);
 }
 
 .profile-section2 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 60px;
-  padding: 30px;
+  gap: 15px;
+  padding-left: 15px;
+  font-size: 25px;
+  
 }
 
 .profile-section2 input {
   outline: none;
   border: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /*paramedic home*/
@@ -1502,8 +1560,12 @@ body {
   font-size: 24px;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  background-color: white;
   padding: 1rem;
-  position: relative;
   z-index: 1;
 }
 .switch input {
@@ -1517,8 +1579,8 @@ body {
   transition: all ease 0.2s;
   -webkit-transition: all ease 0.2s;
   border-radius: 20px;
+  background-color: #222831;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-  /*        box-shadow: inset 0 0 40px #47cf73; */
 }
 
 .switch i:before {
@@ -1541,7 +1603,6 @@ body {
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #47cf73;
   -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #47cf73;
 }
-
 .paramedic-img {
   width: 50px;
   height: 50px;
@@ -1555,7 +1616,6 @@ body {
   top: 4%;
   margin-left: 20px;
 }
-
 .request-section {
   display: flex;
   flex-direction: column;
@@ -1565,9 +1625,8 @@ body {
   height: 40vh;
   background-color: #ffffff;
   padding: 1rem;
-  z-index: -1;
+  
 }
-
 .request-section1 {
   display: flex;
   align-items: center;
@@ -1580,7 +1639,6 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
-
 .request-section2 {
   margin-top: auto;
   display: flex;
@@ -1590,19 +1648,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 25px;
   margin-top: auto;
 }
 .request-section3 button:first-of-type {
   width: 150px;
   background-color: red;
 }
-
 .request-section3 button:last-of-type {
   background-color: #47cf73;
   width: 150px;
 }
-
 .arrived {
   position: absolute;
   bottom: 0;
@@ -1630,6 +1686,182 @@ body {
 }
 
 /*admin home*/
+
+
+
+/* table */
+td{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #222831;
+}
+table{
+  border-collapse: collapse;
+  width: 70%;   
+}
+td, th {
+  text-align:center;
+}
+/* edit container */
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.514); 
+  display:none;
+  z-index: 1;
+}
+
+.container-1{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222831;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  
+}
+
+.container-1 input{
+  display: block;
+  margin-bottom: 20px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background-color: #eee;
+  text-transform: capitalize;
+  color: #222831;
+  border-radius: 5px;
+}
+
+.submit-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.submit-container input{
+  width: 50%;
+  background-color: #00ADB5;
+  font-size: 16px;
+  color: #eee;
+  margin-top: 10px;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-icon{
+  color: white;
+  position: absolute;
+  top: 3%;
+  left: 90%;
+  font-size: 32px;
+  cursor: pointer;
+}
+.add-icon{
+  font-size: 28px;
+  color:  #00ADB5;
+}
+
+.edit-icon{
+  color:green
+
+}
+.delete-icon{
+  color:red;
+  
+}
+.container-2{
+  width: 100vw;
+  position: absolute;
+  top: 15%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* search  */
+.search-container{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-input{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: none;
+  opacity: 0;
+  padding: 10px;
+  border-radius: 5px;
+  left: 25%;
+}
+
+.search-icon{
+  position: absolute;
+  font-size: 32px;
+  color: rgb(0, 217, 255);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  transition: 1s left ease;
+  left: 25%;
+
+}
+
+.search-container.show .search-icon{
+  left: 70%;
+  background-color: white;
+
+}
+.search-container.show .search-input{
+  width: 50%;
+  transition: 1s all ease;
+  font-size: 18px;
+  opacity: 1;
+}
+
+.search-input:focus{
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*admin home*/
 .admin-container {
   width: 80vw;
   position: absolute;
@@ -1655,7 +1887,7 @@ th {
 
 .admin-sidebar {
   height: 100vh;
-  width: 50px;
+  width: 70px;
   position: fixed;
   background-color: var(--dark);
 }
@@ -1671,7 +1903,7 @@ th {
 }
 
 .sidebar-content img {
-  max-width: 100%;
+  max-width: 80%;
   margin-bottom: auto;
   padding-top: 10px;
 }
@@ -1680,16 +1912,20 @@ th {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
 }
 
 .admin-header {
-  width: calc(100vw - 50px);
-  transform: translateX(50px);
+  width: calc(100vw - 70px);
+  
+   transform: translateX(70px); 
   position: fixed;
-  height: 8vh;
-
+  height: max-content;
+  z-index: 1;
+  background-color: #eeeeee;
   display: flex;
+  align-items: center;
+  
 }
 
 .admin-header-section1 {
@@ -1749,7 +1985,9 @@ th {
   justify-content: center;
   gap: 10px;
   margin-left: auto;
-  margin-right: 1%;
+  margin-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .admin-header-section2 img {
   width: 60px;
@@ -1763,29 +2001,32 @@ th {
 .history-header {
   position: absolute;
   top: 15%;
-  width: calc(100vw - 50px);
-  transform: translateX(50px);
-  padding-left: 2rem;
-  transform: translateX(10%);
+  width: calc(100vw - 70px);
+  transform: translateX(70px);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* transform: translateX(10%); */
 }
 
 .history-main {
   position: absolute;
   top: 20%;
-  width: calc(100vw - 50px);
-  transform: translateX(50px);
+  width: calc(100vw - 70px);
+  transform: translateX(70px);
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
-  justify-content: flex-start;
-  transform: translateX(10%);
+  justify-content: center;
+  overflow-y: scroll;
 }
 
 .rides-history-section {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background-color: rgb(226, 225, 223);
   padding: 1rem;
   display: flex;
@@ -1822,7 +2063,7 @@ th {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 .rides-section3 i {
   font-size: 18px;
