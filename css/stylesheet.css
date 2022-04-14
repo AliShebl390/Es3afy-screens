@@ -138,7 +138,6 @@ a {
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
   overflow: hidden;
-
 }
 .content-container{
   width: 100%;
@@ -154,8 +153,14 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  gap: 10px;
+}
+.sign-up a {
+  align-self: center;
+}
+.sign-up button{
+  margin-top: 10px;
+  align-self: center;
 }
 .sign-up-h1{
   text-align: center;

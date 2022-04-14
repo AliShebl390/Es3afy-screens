@@ -56,18 +56,35 @@
     </div>
 
     <div class="sign-container">
-      <div class="content-container">
-        <div class="sign-up">
-          <h1 class="sign-up-h1">Sign Up</h1>
-          <input class="custom-input" type="text" placeholder="Name" />
-          <input class="custom-input" type="email" placeholder="E-mail" />
-          <input class="custom-input" type="password" placeholder="Password" />
-          <input class="custom-input" type="tel" placeholder="Mobile" />
-          <input class="custom-input" type="text" placeholder="Gender" />
-          <input class="custom-input" type="date" placeholder="Birthday" />
-          <a href="medical-history.html">
-            <button class="button-custom">Sign Up</button>
-          </a>
+        <div class="content-container">
+            <div class="sign-up">
+              <h1 class="sign-up-h1">Sign Up</h1>
+
+              <label for="name">Username</label>
+              <input name="name" id="name" class="custom-input" type="text" />
+              
+              <label for="email">Email</label>
+              <input name="email" id="email" class="custom-input" type="email"/>
+              
+              <label for="password">Password</label>
+              <input class="custom-input" id="password" type="password"/>
+              
+              <label for="mobile">mobile</label>
+              <input class="custom-input" id="mobile" type="tel"/>
+              
+              <label for="birthday">date of birth</label>
+              <input class="custom-input" id="birthday" type="date"/>
+              
+              <div class="form-check">
+                  <input class="form-check-input input-1" value="Male" type="radio" name="flexRadioDefault"  id="male"/>
+                  <label class="form-check-label" for="male">Male</label>
+                  
+                  <input class="form-check-input input-2" type="radio" name="flexRadioDefault"  id="female"/>
+                  <label class="form-check-label" for="female">Female</label>               
+                </div>
+              <a class="button-test" href="medical-history.html">
+                <button class="button-custom">Sign Up</button>
+              </a>
         </div>
       </div>
       <!-- signin -->
@@ -137,7 +154,6 @@
         );
       }, 300);
 
-     
       $(window).on("load", function () {
         $(".splash-div").fadeOut(2000);
       });
