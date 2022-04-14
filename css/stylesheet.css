@@ -31,6 +31,7 @@ html {
 }
 body {
   font-family: "Work Sans", sans-serif;
+  text-transform: capitalize;
   background-color: #eee;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -1749,7 +1750,7 @@ td, th {
   outline: none;
   padding-left: 15px;
   background-color: #eee;
-  text-transform: capitalize;
+  text-transform: capitalize; 
   color: #222831;
   border-radius: 5px;
 }
