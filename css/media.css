@@ -1,4 +1,4 @@
-@media screen and (max-width: 650px) and (min-width: 300px) {
+@media screen and (min-width: 300px)  {
   .content-fp {
     width: 100vw;
     height: 100vh;
@@ -91,7 +91,7 @@
   }
 
   .content-container-2 {
-    top: 10%;
+    top: 20%;
     transform: translateY(70%);
   }
   .inputs-container {
