@@ -27,6 +27,7 @@
 }
 html {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -34,6 +35,8 @@ body {
   background-color: #eee;
   overflow-y: scroll;
   overflow-x: hidden;
+  height: -webkit-fill-available;
+
 }
 a {
   text-decoration: none;
