@@ -16,7 +16,7 @@
     max-width: 100%;
   }
   .content-container-2 {
-    transform: translateY(70%);
+    transform: translateY(60%);
   }
   .admin-header {
     transform: translateX(0);
@@ -91,7 +91,7 @@
   }
 
   .content-container-2 {
-    top: 20%;
+    top: 10%;
     transform: translateY(70%);
   }
   .inputs-container {
