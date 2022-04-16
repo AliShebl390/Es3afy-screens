@@ -996,7 +996,7 @@ i {
 /* End sos contact */
 /* home*/
 .home-container {
-  height: 100%;
+  height: calc(100vh);
   width: 100vw;
 
   display: flex;
@@ -1005,7 +1005,7 @@ i {
   overflow: hidden;
 }
 .home-header {
-  width: 100%;
+  width: 100vw;
   height: 70px;
   display: flex;
   align-items: center;
@@ -1028,6 +1028,7 @@ i {
 
 .emergency-section {
   width: 100vw;
+
   display: flex;
   align-items: center;
   justify-content: center;
