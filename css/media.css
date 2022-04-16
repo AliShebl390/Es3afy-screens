@@ -87,6 +87,21 @@
     top: 25%;
     transform: translateY(65%);
   }
+  .list{
+    font-size: 12px;
+  }
+  tr th,td{
+    padding-right: 20px;
+  }
+  .admin-container{
+    transform: translateX(0);
+    left: 1%;
+    width: 100vw;
+  }
+  .container-1{
+    width: 100vw;
+  }
+  
 }
 
 @media (max-height: 568px) {
