@@ -609,8 +609,8 @@ i {
   flex-direction: column;
 }
 .req-content .req-process img {
-  width: 200px;
-  height: 100px;
+  max-width: 200px;
+  max-height: 100px;
   margin: 10px auto 10px 0;
   margin-left: auto;
   object-fit: cover;
