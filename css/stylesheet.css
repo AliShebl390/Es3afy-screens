@@ -1660,20 +1660,27 @@ body {
   gap: 25px;
   margin-top: auto;
 }
-.request-section3 button:first-of-type {
+.request-section3 .decline {
   width: 150px;
   background-color: red;
 }
-.request-section3 button:last-of-type {
+
+.accept-button  {
   background-color: #47cf73;
   width: 150px;
+  height: 41px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  text-align: center;
 }
 .arrived {
   position: absolute;
   bottom: 0;
   height: 20vh;
   width: 100vw;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;

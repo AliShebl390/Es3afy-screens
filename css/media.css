@@ -188,6 +188,13 @@
     width: 400px;
     height: 400px;
   }
+   .request-section{
+     height: 300px;
+   }
+    .request-section2{
+      align-items: center;
+      justify-content: center;
+    }
 }
 
 /* Medium */
@@ -215,6 +222,7 @@
     align-items: center;
     justify-content: center;
   }
+  
   .first-use-container {
     justify-content: flex-start;
   }
