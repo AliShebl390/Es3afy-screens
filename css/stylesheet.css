@@ -646,6 +646,12 @@ i {
   padding: 15px;
   margin-bottom: 10px;
 }
+.details-container img{
+    max-width: 300px;
+  max-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .details-container .date {
   font-size: 1.2rem;
   margin: 15px 15px 25px 15px;
