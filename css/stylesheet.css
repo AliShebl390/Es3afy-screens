@@ -608,6 +608,7 @@ i {
 }
 .req-content .req-process img {
   width: 305px;
+  height: 150px;
   margin: 10px 0 10px 0;
   object-fit: cover;
 }
