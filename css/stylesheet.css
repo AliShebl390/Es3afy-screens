@@ -605,12 +605,16 @@ i {
   padding: 15px;
   margin-bottom: 2vh;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 .req-content .req-process img {
-  width: 305px;
-  height: 150px;
-  margin: 10px 0 10px 0;
+  width: 200px;
+  height: 100px;
+  margin: 10px auto 10px 0;
+  margin-left: auto;
   object-fit: cover;
+  
 }
 .req-content .req-process p {
   font-size: 1.1rem;
