@@ -104,6 +104,27 @@
    
     
   }
+  .active {
+  transform: translateY(-250%);
+  opacity: 1;
+}
+
+.active2 {
+  transform: translate(-150%, -180%);
+  opacity: 1;
+}
+.active3 {
+  transform: translate(-200%, -30%);
+  opacity: 1;
+}
+.active4 {
+  transform: translate(150%, -180%);
+  opacity: 1;
+}
+.active5 {
+  transform: translate(200%, -30%);
+  opacity: 1;
+}
 }
 
 @media (max-height: 568px) {
