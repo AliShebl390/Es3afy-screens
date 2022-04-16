@@ -77,19 +77,19 @@
   .sign-active {
     transform: translateY(0);
   }
-  .sign-up{
-    top: 20% ;
+  .sign-up {
+    top: 20%;
   }
-  .sign-up-h1{
+  .sign-up-h1 {
     margin-bottom: 4vh;
   }
-  .content-container-2{
+  .content-container-2 {
     top: 25%;
     transform: translateY(65%);
   }
 }
 
-@media  (max-height: 568px) {
+@media (max-height: 568px) {
   .sign-up {
     top: 0%;
   }
@@ -116,10 +116,9 @@
     width: 200px;
     height: 200px;
   }
-  .sign-up-h1{
-   margin-bottom: 25px;
+  .sign-up-h1 {
+    margin-bottom: 25px;
   }
-  
 }
 
 @media (min-width: 600px) {
@@ -196,6 +195,18 @@
   }
   .profile-container {
     align-items: center;
+  }
+  .first-image-first-use {
+    width: 500px;
+    height: 500px;
+  }
+  .second-image-first-use {
+    width: 400px;
+    height: 400px;
+  }
+  .third-image-first-use {
+    width: 500px;
+    height: 400px;
   }
 }
 
@@ -278,7 +289,14 @@
   .his-content {
     top: 25%;
   }
- 
+  .first-image-first-use {
+    width: 600px;
+    height: 600px;
+  }
+  .second-image-first-use {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 @media screen and (min-height: 914px) {
@@ -292,7 +310,7 @@
   .sign-up h1 {
     margin-bottom: 20px;
   }
-  .content-container-2{
+  .content-container-2 {
     transform: translateY(70%);
   }
 }
