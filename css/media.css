@@ -87,22 +87,23 @@
     top: 25%;
     transform: translateY(65%);
   }
-  .list{
+  .list {
     font-size: 12px;
   }
-  tr th,td{
+  tr th,
+  td {
     padding-right: 20px;
   }
-  .admin-container{
+  .admin-container {
     transform: translateX(0);
     left: 1%;
     width: 100vw;
   }
-  .container-1{
+  .container-1 {
     width: 100vw;
-    height: 100vh;
+   
+    
   }
-  
 }
 
 @media (max-height: 568px) {
