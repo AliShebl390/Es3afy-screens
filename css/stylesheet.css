@@ -1073,7 +1073,7 @@ i {
   object-fit: cover;
   border-radius: 50%;
   position: absolute;
-  top: 90%;
+  top: 95%;
   z-index: 1;
   opacity: 0;
   transition: 500ms ease-in;
