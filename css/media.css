@@ -167,6 +167,16 @@ font-size: 40px;
   width: 250px;
   height: 200px;
 }
+.adj h5 {
+  transform: translateY(40%);
+  font-size: 18px;
+}
+
+.adj i {
+  color: var(--dark);
+  transform: translateY(42%);
+  font-size: 16px;
+}
 
 }
 
