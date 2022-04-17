@@ -125,7 +125,7 @@ a:active {
   max-width: 40%;
 }
 
-.cont .adj a:active{
+.cont .adj a:focus{
   background-color: transparent;
 }
 
