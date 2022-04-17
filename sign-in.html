@@ -98,29 +98,29 @@
           </a>
         </div>
       </div>
-      <!-- signin -->
-      <!-- <div class="content-container-2">
-        <div class="content-container-3">
-          <div class="sign-in">
-            <h1 class="sign-in-h1">Sign In</h1>
-          </div>
-          <div class="inputs-container">
-            <input class="custom-input" type="email" placeholder="E-mail" />
-            <input
-              class="custom-input"
-              type="password"
-              placeholder="Password"
-            />
-            <a href="home.html">
-              <button class="button-custom">Sign In</button>
-            </a>
-            <a href="ForgetPassword.html" class="forget-password"
-              >forgot your password ?</a
-            >
-          </div>
-        </div>
-      </div> -->
     </div>
+    
+     <div class="content-container-2">
+      <div class="content-container-3">
+        <div class="sign-in">
+          <h1 class="sign-in-h1">Sign In</h1>
+        </div>
+        <div class="inputs-container">
+          <input class="custom-input" type="email" placeholder="E-mail" />
+          <input
+            class="custom-input"
+            type="password"
+            placeholder="Password"
+          />
+          <a href="home.html">
+            <button class="button-custom">Sign In</button>
+          </a>
+          <a href="ForgetPassword.html" class="forget-password"
+            >forgot your password ?</a
+          >
+        </div>
+      </div>
+    </div> 
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -128,28 +128,28 @@
     ></script>
 
     <script>
-      // const signInH1 = document.querySelector(".sign-in-h1");
-      // const contentContainer2 = document.querySelector(".content-container-2");
-      // const SignUpH1 = document.querySelector(".sign-up-h1");
-      // const contentContainer = document.querySelector(".content-container");
+      const signInH1 = document.querySelector(".sign-in-h1");
+      const contentContainer2 = document.querySelector(".content-container-2");
+      const SignUpH1 = document.querySelector(".sign-up-h1");
+      const contentContainer = document.querySelector(".content-container");
 
-      // signInH1.addEventListener("click", function () {
-      //   contentContainer2.classList.add("sign-active");
-      //   signInH1.classList.add("h1-scale");
-      //   SignUpH1.classList.remove("h1-scale");
-      // });
+      signInH1.addEventListener("click", function () {
+        contentContainer2.classList.add("sign-active");
+        signInH1.classList.add("h1-scale");
+        SignUpH1.classList.remove("h1-scale");
+      });
 
-      // SignUpH1.addEventListener("click", function () {
-      //   contentContainer2.classList.remove("sign-active");
-      //   signInH1.classList.remove("h1-scale");
-      //   SignUpH1.classList.add("h1-scale");
-      // });
+      SignUpH1.addEventListener("click", function () {
+        contentContainer2.classList.remove("sign-active");
+        signInH1.classList.remove("h1-scale");
+        SignUpH1.classList.add("h1-scale");
+      });
 
-      // contentContainer.addEventListener("click", function () {
-      //   contentContainer2.classList.remove("sign-active");
-      //   signInH1.classList.remove("h1-scale");
-      //   SignUpH1.classList.add("h1-scale");
-      // });
+      contentContainer.addEventListener("click", function () {
+        contentContainer2.classList.remove("sign-active");
+        signInH1.classList.remove("h1-scale");
+        SignUpH1.classList.add("h1-scale");
+      });
 
       setTimeout(function () {
         let viewheight = $(window).height();
