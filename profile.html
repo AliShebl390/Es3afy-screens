@@ -38,22 +38,40 @@
     <div class="profile-container">
 
         <div class="profile-section1">
-            <i id="edit-icon" class="fas fa-edit"></i>
+            <i id="edit-icon" class="fas fa-edit ed"></i>
               <img src="/images/person.jpg" alt="">
           </div>
      
         <div class="profile-section2">
             <h5>first name</h5>
-            <input class="profile-input" type="text" placeholder="ahmed" disabled>
+            <input class="profile-input in" type="text" placeholder="ahmed" disabled>
             <h5>last name</h5>
-            <input class="profile-input" type="text" placeholder="yasser" disabled>
+            <input class="profile-input in" type="text" placeholder="yasser" disabled>
             <h5>phone number</h5>
-            <input class="profile-input" type="number" placeholder="01232334444" disabled> 
+            <input class="profile-input in" type="tel" placeholder="01234383477" disabled> 
             <h5>email</h5>
-            <input class="profile-input" type="email" placeholder="email@example.gmail.com" disabled>
+            <input class="profile-input in" type="email" placeholder="example@gmail.com" disabled>
             <h5>password <a href="forget-passowrd-from-profile.html"><span style="font-size: 16px;color: var(--light); padding-left: 10px;">change password</span></a>  </h5>
             <input class="profile-input" type="password" placeholder="***********" disabled > 
         </div>
     </div>
+    <script>
+      const edd = document.querySelector('.ed');
+      const inn = document.querySelectorAll('.in');
+
+      edd.addEventListener('click',function(){
+        inn.forEach(input => {
+          
+          if (input.disabled) {
+      // If disabled, do this 
+       input.disabled = false;
+    } else {
+       // Enter code here
+        inn.input = true;
+     }
+        });
+      })
+    </script>
   </body>
+  
 </html>
