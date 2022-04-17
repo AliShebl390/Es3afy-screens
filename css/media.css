@@ -159,6 +159,9 @@ font-size: 40px;
     top: 60%;
   }
 
+  .inputs-container{
+    margin-top: 20%;
+  }
 
 }
 
@@ -172,7 +175,7 @@ font-size: 40px;
     transform: translateY(80%);
   }
   .inputs-container {
-    margin-top: 50px;
+    margin-top: 20%;
   }
   .sign-active {
     transform: translateY(0);
