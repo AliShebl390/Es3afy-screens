@@ -154,7 +154,7 @@ a:active {
   left: 50%;
   top: 10%; 
   transform: translateX(-50%);
-   /* height: 100vh;  */
+   height: 100vh; 
   display: flex;
   flex-direction: column;
   gap: 10px;
