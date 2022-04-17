@@ -186,12 +186,33 @@ font-size: 40px;
   }
 
   .emergency-section img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
   .sign-up-h1 {
     margin-bottom: 25px;
   }
+    .active {
+  transform: translateY(-230%);
+  opacity: 1;
+}
+
+.active2 {
+  transform: translate(-150%, -170%);
+  opacity: 1;
+}
+.active3 {
+  transform: translate(-200%, -25%);
+  opacity: 1;
+}
+.active4 {
+  transform: translate(150%, -170%);
+  opacity: 1;
+}
+.active5 {
+  transform: translate(200%, -25%);
+  opacity: 1;
+}
 }
 
 @media (min-width: 600px) {

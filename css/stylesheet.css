@@ -1073,7 +1073,7 @@ i {
   font-size: 60px;
   z-index: 2;
   position: absolute;
-  top: 95%;
+  top: 90%;
 }
 
 .sos-contact,
@@ -1087,7 +1087,7 @@ i {
   object-fit: cover;
   border-radius: 50%;
   position: absolute;
-  top: 95%;
+  top: 90%;
   z-index: 1;
   opacity: 0;
   transition: 500ms ease-in;
