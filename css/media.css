@@ -105,24 +105,24 @@
     
   }
   .active {
-  transform: translateY(-300%);
+  transform: translateY(-350%);
   opacity: 1;
 }
 
 .active2 {
-  transform: translate(-150%, -250%);
+  transform: translate(-150%, -300%);
   opacity: 1;
 }
 .active3 {
-  transform: translate(-200%, -100%);
+  transform: translate(-200%, -150%);
   opacity: 1;
 }
 .active4 {
-  transform: translate(150%, -250%);
+  transform: translate(150%, -300%);
   opacity: 1;
 }
 .active5 {
-  transform: translate(200%, -100%);
+  transform: translate(200%, -150%);
   opacity: 1;
 }
 
@@ -135,7 +135,7 @@
   justify-self: flex-end;
 }
 .sos-section{
-  background-color: bisque;
+  
   position: relative;
   height: calc(30% - 70px);
   margin-top: auto;
