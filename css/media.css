@@ -137,7 +137,7 @@
 .sos-section{
  
   position: relative;
-  /* height: calc(30% - 70px); */
+  height: calc(40% - 70px);
   /* margin-top: auto; */
 }
 .sos-section i {
