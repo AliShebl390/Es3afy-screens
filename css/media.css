@@ -105,24 +105,24 @@
     
   }
   .active {
-  transform: translateY(-250%);
+  transform: translateY(-300%);
   opacity: 1;
 }
 
 .active2 {
-  transform: translate(-150%, -180%);
+  transform: translate(-150%, -250%);
   opacity: 1;
 }
 .active3 {
-  transform: translate(-200%, -30%);
+  transform: translate(-200%, -100%);
   opacity: 1;
 }
 .active4 {
-  transform: translate(150%, -180%);
+  transform: translate(150%, -250%);
   opacity: 1;
 }
 .active5 {
-  transform: translate(200%, -30%);
+  transform: translate(200%, -100%);
   opacity: 1;
 }
 
@@ -134,6 +134,30 @@
 .first-use-container a{
   justify-self: flex-end;
 }
+.sos-section{
+  background-color: bisque;
+  position: relative;
+  height: calc(30% - 70px);
+  margin-top: auto;
+}
+.sos-section i {
+top: 60%;
+font-size: 40px;
+}
+.emergency-section{
+  height: calc(70% - 70px);
+  margin-top: 50px;
+}
+  .sos-contact,
+  .sos-contact1,
+  .sos-contact2,
+  .sos-contact3,
+  .sos-contact4,
+  .sos-contact5 {
+    width: 50px;
+    height: 50px;
+  }
+
 
 }
 
