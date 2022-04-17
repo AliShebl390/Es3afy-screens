@@ -145,7 +145,7 @@ top: 60%;
 font-size: 40px;
 }
 .emergency-section{
-  height: calc(70% - 70px);
+  /* height: calc(70% - 70px); */
   /* margin-top: 50px; */
 }
   .sos-contact,
