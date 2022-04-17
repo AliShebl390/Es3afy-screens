@@ -133,6 +133,17 @@
 .first-use-container a{
   justify-self: flex-end;
 }
+.sos-section{
+  height: 30%;
+  
+  position: relative;
+}
+.sos-section i {
+  top: 50%;
+}
+.emergency-section{
+  height: 70%;
+}
 }
 
 @media (max-height: 568px) {
