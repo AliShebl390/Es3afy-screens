@@ -125,6 +125,13 @@
   transform: translate(200%, -30%);
   opacity: 1;
 }
+.first-use-container{
+ justify-content: flex-start;
+ margin-top: 30%;
+}
+.first-use-container a{
+  align-self: center;
+}
 }
 
 @media (max-height: 568px) {
