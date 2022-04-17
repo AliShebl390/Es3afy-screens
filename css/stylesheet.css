@@ -126,7 +126,7 @@ a:active {
 }
 
 .cont .adj a:focus{
-  color: transparent;
+  color: #eee;
 }
 
 .adj h5 {
