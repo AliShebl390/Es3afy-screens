@@ -230,6 +230,7 @@ a:active {
   transition: 1s ease-in-out;
   cursor: pointer;
   padding-top: 2vh;
+  padding-bottom: 2vh;
   font-size: 28px;
 }
 .h1-scale {
