@@ -139,7 +139,7 @@ a:active {
 /* Start sign-up/in -- forget reset password*/
 .sign-container {
   width: 100vw;
-  height: 50%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -152,9 +152,9 @@ a:active {
 .sign-up {
   position: absolute;
   left: 50%;
-  /* top: 10%; */
+  top: 10%; 
   transform: translateX(-50%);
-  /* height: 100vh; */
+   /* height: 100vh;  */
   display: flex;
   flex-direction: column;
   gap: 10px;
