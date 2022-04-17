@@ -127,10 +127,11 @@
 }
 .first-use-container{
  justify-content: flex-start;
- margin-top: 30%;
+ padding-top: 30%;
+ height: max-content;
 }
 .first-use-container a{
-  align-self: center;
+  justify-self: flex-end;
 }
 }
 
