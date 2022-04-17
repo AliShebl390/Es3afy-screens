@@ -105,24 +105,24 @@
     
   }
   .active {
-  transform: translateY(-350%);
+  transform: translateY(-300%);
   opacity: 1;
 }
 
 .active2 {
-  transform: translate(-150%, -300%);
+  transform: translate(-150%, -250%);
   opacity: 1;
 }
 .active3 {
-  transform: translate(-200%, -150%);
+  transform: translate(-200%, -100%);
   opacity: 1;
 }
 .active4 {
-  transform: translate(150%, -300%);
+  transform: translate(150%, -250%);
   opacity: 1;
 }
 .active5 {
-  transform: translate(200%, -150%);
+  transform: translate(200%, -100%);
   opacity: 1;
 }
 
@@ -135,7 +135,7 @@
   justify-self: flex-end;
 }
 .sos-section{
-  
+ 
   position: relative;
   height: calc(30% - 70px);
   margin-top: auto;
@@ -156,6 +156,7 @@ font-size: 40px;
   .sos-contact5 {
     width: 50px;
     height: 50px;
+    top: 60%;
   }
 
 
