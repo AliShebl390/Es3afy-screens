@@ -1014,7 +1014,7 @@ i {
 /* End sos contact */
 /* home*/
 .home-container {
-  height: calc(100vh);
+  height: 90vh;
   width: 100vw;
 
   display: flex;
