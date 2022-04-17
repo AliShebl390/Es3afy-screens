@@ -126,8 +126,7 @@ a:active {
 }
 
 .cont img {
-  width: 200px;
-  height: 200px;
+max-width: 10%;
 }
 
 
