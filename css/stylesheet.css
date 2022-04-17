@@ -126,6 +126,10 @@ a:active {
   max-width: 40%;
 }
 
+.cont .adj a:active{
+  background-color: transparent;
+}
+
 .adj h5 {
   transform: translateY(30%);
 }
