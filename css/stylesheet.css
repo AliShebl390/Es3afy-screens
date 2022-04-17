@@ -109,7 +109,7 @@ a:active {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  gap: 20%;
+  gap: 10%;
   font-weight: 700;
 }
 .cont a:visited{
@@ -126,7 +126,9 @@ a:active {
 }
 
 .cont img {
-max-width: 10%;
+
+  max-width: 50%;
+
 }
 
 
@@ -136,7 +138,7 @@ max-width: 10%;
 
 .adj h5 {
   transform: translateY(40%);
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .adj i {
