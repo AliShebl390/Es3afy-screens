@@ -34,7 +34,6 @@ body {
   background-color: #eee;
   overflow-y: scroll;
   overflow-x: hidden;
-  
 }
 input:focus::placeholder {
   color: transparent;
@@ -43,10 +42,10 @@ a {
   text-decoration: none;
   color: var(--dark);
 }
-a:visited{
+a:visited {
   outline: none;
 }
-a:active{
+a:active {
   outline: none;
 }
 .fas {
@@ -89,7 +88,6 @@ a:active{
 .second-image-first-use {
   width: 250px;
   height: 250px;
-  
 }
 .third-image-first-use {
   width: 300px;
@@ -141,7 +139,7 @@ a:active{
 /* Start sign-up/in -- forget reset password*/
 .sign-container {
   width: 100vw;
-  height: 90%;
+  height: 50%;
   position: relative;
   overflow: hidden;
 }
@@ -623,7 +621,6 @@ i {
   margin: 10px auto 10px 0;
   margin-left: auto;
   object-fit: cover;
-  
 }
 .req-content .req-process p {
   font-size: 1.1rem;
@@ -655,8 +652,8 @@ i {
   padding: 15px;
   margin-bottom: 10px;
 }
-.details-container img{
-    max-width: 300px;
+.details-container img {
+  max-width: 300px;
   max-height: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -1075,7 +1072,6 @@ i {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  
 }
 .sos-section i {
   color: red;
@@ -1290,7 +1286,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  
 }
 
 .tracking-header button {
@@ -1676,7 +1671,7 @@ body {
   background-color: red;
 }
 
-.accept-button  {
+.accept-button {
   background-color: #47cf73;
   width: 150px;
   height: 41px;
