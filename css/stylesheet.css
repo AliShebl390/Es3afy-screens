@@ -100,7 +100,7 @@ a {
   font-size: 2rem;
   color: var(---dark);
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   gap: 20%;
