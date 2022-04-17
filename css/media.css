@@ -125,6 +125,7 @@
   transform: translate(200%, -30%);
   opacity: 1;
 }
+<<<<<<< HEAD
 .first-use-container{
  justify-content: flex-start;
  margin-top: 100px;
@@ -133,6 +134,8 @@
 .first-use-container a{
   justify-self: flex-end;
 }
+=======
+>>>>>>> parent of 5ff3a18 (.)
 }
 
 @media (max-height: 568px) {
