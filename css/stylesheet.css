@@ -198,7 +198,7 @@ a:active {
   width: 400px;
   height: 40vh;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -230,7 +230,7 @@ a:active {
   transition: 1s ease-in-out;
   cursor: pointer;
   padding-top: 2vh;
-  padding-bottom: 2vh;
+  
   font-size: 28px;
 }
 .h1-scale {
