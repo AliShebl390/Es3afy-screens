@@ -30,7 +30,6 @@ html {
 }
 body {
   font-family: "Work Sans", sans-serif;
-  text-transform: capitalize;
   background-color: #eee;
   overflow-y: scroll;
   overflow-x: hidden;
