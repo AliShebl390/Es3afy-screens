@@ -163,6 +163,11 @@ font-size: 40px;
     margin-top: 15%;
   }
 
+  .cont img {
+  width: 200px;
+  height: 200px;
+}
+
 }
 
 @media (max-height: 568px) {
