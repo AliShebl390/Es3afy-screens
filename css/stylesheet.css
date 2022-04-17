@@ -100,7 +100,7 @@ a {
   font-size: 2rem;
   color: var(---dark);
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 20%;
@@ -1062,6 +1062,7 @@ i {
 }
 .sos-section {
   width: 100vw;
+  height: 30%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1080,12 +1081,12 @@ i {
 .sos-contact3,
 .sos-contact4,
 .sos-contact5 {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 50%;
   position: absolute;
-  top: 60%;
+  top: 95%;
   z-index: 1;
   opacity: 0;
   transition: 500ms ease-in;
@@ -1680,7 +1681,7 @@ body {
   bottom: 0;
   height: 20vh;
   width: 100vw;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
