@@ -198,7 +198,7 @@ a:active {
   width: 400px;
   height: 40vh;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
