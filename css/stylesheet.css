@@ -125,21 +125,24 @@ a:active {
 }
 
 .cont img {
-  max-width: 40%;
+  width: 200px;
+  height: 200px;
 }
+
 
 .cont .adj a:focus-visible{
   color: transparent;
 }
 
 .adj h5 {
-  transform: translateY(30%);
+  transform: translateY(40%);
+  font-size: 18px;
 }
 
 .adj i {
   color: var(--dark);
-  transform: translateY(35%);
-  font-size: 24px;
+  transform: translateY(42%);
+  font-size: 16px;
 }
 /*End choose user*/
 /* Start sign-up/in -- forget reset password*/
