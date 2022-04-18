@@ -168,10 +168,12 @@ a:active {
   flex-direction: column;
   gap: 10px;
 }
-.sign-up .form-check {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.content-container form select{
+  width: 217px;
+  height: 34px;
+  border: none;
+  text-transform: capitalize;
+  background: #dadada;
 }
 .sign-up a {
   align-self: center;
