@@ -168,7 +168,7 @@ a:active {
   flex-direction: column;
   gap: 10px;
 }
-.content-container form select{
+.content-container .sign-up select{
   width: 217px;
   height: 34px;
   border: none;
