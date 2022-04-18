@@ -169,17 +169,18 @@ font-size: 40px;
   align-items: center;
   width: 90vw;
   border: 1px solid black;
-  
+  margin-top: 10px;
 }
 
 .cont img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 .cont {
    padding: 0; 
- 
   text-align: center;
+  gap: 10px;
+  align-items: center;
 }
 
 
