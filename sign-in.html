@@ -8,36 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <metaname="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"/>
     <!-- Font Awsome library -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/869711923d.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvs+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/869711923d.js" crossorigin="anonymous"></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Work+Sans:wght@200;300;400;500;700;800&display=swap" rel="stylesheet"/>
     <title>Es3afy</title>
     <!-- icon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/logo png.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo png.png"/>
     <!-- Js -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/media.css" />
     <!-- script -->
@@ -55,78 +36,54 @@
     <div class="sign-container">
       <div class="content-container">
         <div class="sign-up">
-          <h1 class="sign-up-h1">Sign Up</h1>
-
-          <label for="name">Username</label>
-          <input name="name" id="name" class="custom-input" type="text" />
-
-          <label for="email">Email</label>
-          <input name="email" id="email" class="custom-input" type="email" />
-
-          <label for="password">Password</label>
-          <input class="custom-input" id="password" type="password" />
-
-          <label for="mobile">Mobile</label>
-          <input class="custom-input" id="mobile" type="tel" />
-
-          <label for="birthday">Date of birth</label>
-          <input class="custom-input" id="birthday" type="date" />
-
-          <div class="form-check">
-            <div class="rd-1">
-              <input
-                class="form-check-input input-1"
-                value="Male"
-                type="radio"
-                name="flexRadioDefault"
-                id="male"
-              />
-              <label class="form-check-label" for="male">Male</label>
-            </div>
-            <div class="rd-2">
-              <input
-                class="form-check-input input-2"
-                type="radio"
-                name="flexRadioDefault"
-                id="female"
-              />
-              <label class="form-check-label" for="female">Female</label>
-            </div>
-          </div>
-          <a class="button-test" href="medical-history.html">
-            <button class="button-custom">Sign Up</button>
-          </a>
+          <!-- action="{{url('store-user')}} -->
+          <!-- @csrf    -->
+              <h1 class="sign-up-h1">Sign Up</h1>
+              <label for="name">Username</label>
+              <input name="name" id="name" class="custom-input" type="text" />
+  
+              <label for="email">Email</label>
+              <input name="email" id="email" class="custom-input" type="email" />
+  
+              <label for="password">Password</label>
+              <input name="password" class="custom-input" id="password" type="password" />
+  
+              <label for="mobile">Mobile</label>
+              <input name="phonenumber" class="custom-input" id="mobile" type="text" />
+  
+              <label for="birthday">Date of birth</label>
+              <input name="birthday" class="custom-input" id="birthday" type="date" />
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender" style=" width: 217px; height: 34px; border: none; text-transform: capitalize; background: #dadada; border-radius: 5px;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <a class="button-test" href="medical-history.html">
+                <button type="submit" class="button-custom">Sign Up</button>
+              </a>
         </div>
       </div>
       <div class="content-container-2">
-       <div class="content-container-3">
-         <div class="sign-in">
-           <h1 class="sign-in-h1">Sign In</h1>
-         </div>
-         <div class="inputs-container">
-           <input class="custom-input" type="email" placeholder="E-mail" />
-           <input
-             class="custom-input"
-             type="password"
-             placeholder="Password"
-           />
-           <a href="home.html">
-             <button class="button-custom">Sign In</button>
-           </a>
-           <a href="ForgetPassword.html" class="forget-password"
-             >Forgot your password ?</a
-           >
-         </div>
-       </div>
-     </div> 
+        <div class="content-container-3">
+          <div class="sign-in">
+            <h1 class="sign-in-h1">Sign In</h1>
+          </div>
+          <div class="inputs-container">
+            <input class="custom-input" type="email" placeholder="E-mail"/>
+            <input class="custom-input" type="password" placeholder="Password"/>
+            <a href="home.html">
+              <button class="button-custom">Sign In</button>
+            </a>
+            <a href="ForgetPassword.html" class="forget-password">Forgot your password ?</a>
+          </div>
+        </div>
+      </div> 
     </div>
-    
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-
     <script>
       const signInH1 = document.querySelector(".sign-in-h1");
       const contentContainer2 = document.querySelector(".content-container-2");
