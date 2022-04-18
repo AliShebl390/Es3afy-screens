@@ -168,14 +168,13 @@ font-size: 40px;
  height: 250px;
 }
 .adj h5 {
-  transform: translateY(40%);
-  font-size: 18px;
+  
+  font-size: 30px;
 }
 
 .adj i {
   color: var(--dark);
-  transform: translateY(43%);
-  font-size: 16px;
+  font-size: 30px;
 }
 
 }

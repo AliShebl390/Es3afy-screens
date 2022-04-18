@@ -109,8 +109,9 @@ a:active {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 50px;
   font-weight: 700;
+  text-align: center;
 }
 .cont a:visited{
   outline: none;
@@ -121,8 +122,11 @@ a:active {
 
 .adj {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
   width: 90vw;
+  border: 1px solid black;
+  
 }
 
 .cont img {
@@ -138,14 +142,14 @@ a:active {
 }
 
 .adj h5 {
-  transform: translateY(40%);
-  font-size: 24px;
+  
+  font-size: 30px;
 }
 
 .adj i {
   color: var(--dark);
-  transform: translateY(42%);
-  font-size: 16px;
+ 
+  font-size: 30px;
 }
 /*End choose user*/
 /* Start sign-up/in -- forget reset password*/
