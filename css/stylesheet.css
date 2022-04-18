@@ -125,7 +125,7 @@ a:active {
   flex-direction: column;
   align-items: center;
   width: 90vw;
-  border: 1px solid black;
+  
   
 }
 
@@ -149,7 +149,7 @@ a:active {
 .adj i {
   color: var(--dark);
  
-  font-size: 30px;
+  font-size: 24px;
 }
 /*End choose user*/
 /* Start sign-up/in -- forget reset password*/
