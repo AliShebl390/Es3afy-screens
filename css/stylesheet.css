@@ -1577,16 +1577,17 @@ body {
   border: none;
   font-size: 16px;
   width: fit-content;
-  
+  background-color: transparent;
 
   
 }
 /* .profile-input:enabled{
   background-color: transparent;
-}
+}*/
 .profile-section2 input:focus {
   background-color: transparent ;
-} */
+  outline: none;
+} 
 
 
 /*paramedic home*/
