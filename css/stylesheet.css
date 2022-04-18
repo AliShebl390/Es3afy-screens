@@ -1582,6 +1582,7 @@ body {
   outline: none;
   border: none;
   font-size: 16px;
+  width: max-content;
 }
 
 /*paramedic home*/
