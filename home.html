@@ -48,6 +48,8 @@
       <a style="" href="choose-user.html">log out</a>
     </ol>
 </div>
+<div style="display: none;" class="burger-menu-overlay"></div>
+
 
 <div class="background"></div>
   <div class="home-header">
@@ -88,6 +90,7 @@ const bar3 = document.getElementById('bar3');
 const bar2 = document.getElementById('bar2');
 const nav = document.querySelector('.nav');
 const background = document.querySelector('.background');
+const burgerMenuOverlay=document.querySelector('.burger-menu-overlay');
 
 
 
@@ -98,6 +101,7 @@ bar3.classList.toggle('line3-transform');
 bar2.classList.toggle('line2-opacity');
 nav.classList.toggle('nav-display');
 background.classList.toggle('background-display')
+burgerMenuOverlay.style.display="block";
 })
 
 const phoneImage = document.querySelector(".phone-icon");
@@ -116,6 +120,13 @@ contactImage5.classList.toggle("active5");
 });
 
 
+burgerMenuOverlay.addEventListener('click',function(){
+  bar1.classList.remove('line1-transform');
+bar3.classList.remove('line3-transform');
+bar2.classList.remove('line2-opacity');
+nav.classList.remove('nav-display');
+background.classList.remove('background-display')
+})
 
 
 
