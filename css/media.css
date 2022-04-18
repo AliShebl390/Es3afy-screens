@@ -176,7 +176,11 @@ font-size: 40px;
   width: 250px;
   height: 250px;
 }
-
+.cont {
+   padding: 0; 
+ 
+  text-align: center;
+}
 
 
 
