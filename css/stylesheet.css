@@ -1576,10 +1576,9 @@ body {
   
   border: none;
   font-size: 16px;
-  width: fit-content;
-  background-color:#eee;
-  height: 31px;
   width: min-content;
+  background-color:#eee;
+ 
   
 }
 /* .profile-input:enabled{
