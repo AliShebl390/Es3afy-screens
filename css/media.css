@@ -169,11 +169,12 @@ font-size: 40px;
   align-items: center;
   width: 100vw;
 
-  margin-top: 10px;
+  
 }
 
 .cont img {
-  max-width: 80%;
+  max-width: 200px;
+  max-height: 200px;
 
 }
 .cont {
