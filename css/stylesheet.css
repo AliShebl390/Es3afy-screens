@@ -998,7 +998,7 @@ i {
   font-size: 1rem;
 }
 .add-new-content .inputs form input::placeholder {
-  color: #a9a9a9;
+  color: #eee;
 }
 .add-new-content .inputs form .buttons {
   display: flex;
