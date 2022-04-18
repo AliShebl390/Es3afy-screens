@@ -10,6 +10,8 @@
     <!-- Font Awsome library -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvs+p" crossorigin="anonymous"/>
     <script src="https://kit.fontawesome.com/869711923d.js" crossorigin="anonymous"></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}"> <!-- meta for protection -->
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,11 +54,11 @@
 
             <label for="birthday">date of birth</label>
             <input name="birthday" class="custom-input" id="birthday" type="date" />
-              <label for="gender">gender</label>
-                <select name="gender" id="gender">
-                  <option value="male">male</option>
-                  <option value="female">female</option>
-                </select>
+            <label for="gender">gender</label>
+            <select name="gender" id="gender">
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
             <a class="button-test" href="medical-history.html">
               <button type="submit" class="button-custom">Sign Up</button>
             </a>
