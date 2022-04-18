@@ -36,6 +36,7 @@ body {
 }
 input:focus::placeholder {
   color: transparent;
+  background-color: transparent;
 }
 a {
   text-decoration: none;
@@ -1586,18 +1587,7 @@ body {
   background-color: transparent ;
 } */
 
-@-webkit-keyframes autofill {
-    0%,100% {
-        color: #666;
-        background: transparent;
-    }
-}
 
-input:-webkit-autofill {
-    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both;
-}
 /*paramedic home*/
 
 .paramedic-home-header {
