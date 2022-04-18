@@ -1567,7 +1567,7 @@ body {
 .profile-section1 i {
   position: absolute;
   bottom: 0;
-  transform: translateX(-250%);
+  transform: translateY(150%);
 }
 
 .profile-section2 {
