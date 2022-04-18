@@ -168,14 +168,14 @@ a:active {
   flex-direction: column;
   gap: 10px;
 }
-.content-container select{
+/* .content-container select{
   width: 217px;
   height: 34px;
   border: none;
   text-transform: capitalize;
   background: #dadada;
   border-radius: 5px;
-}
+} */
 .sign-up a {
   align-self: center;
 }
