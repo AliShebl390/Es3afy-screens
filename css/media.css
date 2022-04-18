@@ -251,6 +251,11 @@ font-size: 40px;
   max-height: 150px;
 
 }
+.adj {
+
+  margin-top: 1%;
+
+}
 }
 
 @media (min-width: 600px) {
