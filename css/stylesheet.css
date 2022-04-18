@@ -168,7 +168,7 @@ a:active {
   flex-direction: column;
   gap: 10px;
 }
-.content-container  select{
+.content-container select{
   width: 217px;
   height: 34px;
   border: none;
