@@ -1583,8 +1583,12 @@ body {
   border: none;
   font-size: 16px;
   width: max-content;
+  outline: none;
+  background-color: #eeeeee;
 }
-
+.profile-section2 input:focus{
+  background-color: #eeeeee;
+}
 /*paramedic home*/
 
 .paramedic-home-header {
