@@ -168,7 +168,8 @@ font-size: 40px;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  
+  border: 2px solid rgba(0, 0, 0, 0.24);
+  margin-top: 5%;
 }
 
 .cont img {
@@ -242,6 +243,12 @@ font-size: 40px;
 .active5 {
   transform: translate(200%, -25%);
   opacity: 1;
+}
+
+.cont img {
+  max-width: 150px;
+  max-height: 150px;
+
 }
 }
 
