@@ -35,48 +35,33 @@
 
     <div class="sign-container">
       <div class="content-container">
-        <div class="sign-up">
-          <h1 class="sign-up-h1">Sign Up</h1>
+        <form class="sign-up" method="post" action="{{url('store-user')}}">
+        @csrf   
+            <h1 class="sign-up-h1">Sign Up</h1>
+            <label for="name">Username</label>
+            <input name="name" id="name" class="custom-input" type="text" />
 
-          <label for="name">Username</label>
-          <input name="name" id="name" class="custom-input" type="text" />
+            <label for="email">Email</label>
+            <input name="email" id="email" class="custom-input" type="email" />
 
-          <label for="email">Email</label>
-          <input name="email" id="email" class="custom-input" type="email" />
+            <label for="password">Password</label>
+            <input name="password" class="custom-input" id="password" type="password" />
 
-          <label for="password">Password</label>
-          <input class="custom-input" id="password" type="password" />
+            <label for="mobile">mobile</label>
+            <input name="phonenumber" class="custom-input" id="mobile" type="text" />
 
-          <label for="mobile">Mobile</label>
-          <input class="custom-input" id="mobile" type="tel" />
-
-          <label for="birthday">Date of birth</label>
-          <input class="custom-input" id="birthday" type="date" />
-
-          <label for="gender">gender</label>
-          <select name="gender" id="gender">
-            <option value="male">male</option>
-            <option value="female">female</option>
-          </select>
-          <a class="button-test" href="medical-history.html">
-            <button class="button-custom">Sign Up</button>
-          </a>
-        </div>
-      </div>
-      <div class="content-container-2">
-        <div class="content-container-3">
-          <div class="sign-in">
-            <h1 class="sign-in-h1">Sign In</h1>
-          </div>
-          <div class="inputs-container">
-            <input class="custom-input" type="email" placeholder="E-mail"/>
-            <input class="custom-input" type="password" placeholder="Password"/>
-            <a href="home.html">
-              <button class="button-custom">Sign In</button>
+            <label for="birthday">date of birth</label>
+            <input name="birthday" class="custom-input" id="birthday" type="date" />
+              <label for="gender">gender</label>
+                <select name="gender" id="gender">
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                </select>
+            <a class="button-test" href="medical-history.html">
+              <button type="submit" class="button-custom">Sign Up</button>
             </a>
-            <a href="ForgetPassword.html" class="forget-password">Forgot your password ?</a>
-          </div>
-        </div>
+        </form>
+      </div>
       </div> 
     </div>
     <script
