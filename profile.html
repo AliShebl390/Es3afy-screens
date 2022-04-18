@@ -40,6 +40,7 @@
         <div class="profile-section1">
             <i id="edit-icon" class="fas fa-edit ed"></i>
               <img src="/images/person.jpg" alt="">
+              <p class="save-changes" style="position: absolute;transform: translateY(400%);font-size: 24px; color: var(--light);display: none;">save changes</p>
           </div>
      
         <div class="profile-section2">
@@ -62,18 +63,30 @@
     <script>
       const edd = document.querySelector('.ed');
       const inn = document.querySelectorAll('.in');
-
+      const saveChanges = document.querySelector('.save-changes')
       edd.addEventListener('click',function(){
+        saveChanges.style.display="block";
+        edd.style.display = 'none';
         inn.forEach(input => {
           
           if (input.disabled) {
       // If disabled, do this 
        input.disabled = false;
-    } else {
-       // Enter code here
-        inn.input = true;
-     }
+    }
         });
+      })
+
+      saveChanges.addEventListener('click',function(){
+        edd.style.display = "block";
+        saveChanges.style.display = "none";
+            inn.forEach(input => {
+          
+          if (input.enabled) {
+      // If disabled, do this 
+       input.disabled = true;
+    } 
+        });
+
       })
     </script>
   </body>
