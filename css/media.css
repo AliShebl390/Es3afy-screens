@@ -173,8 +173,8 @@ font-size: 40px;
 }
 
 .cont img {
-  width: 350px;
-  height: 350px;
+  max-width: 60%;
+
 }
 .cont {
    padding: 0; 
