@@ -163,19 +163,10 @@ font-size: 40px;
     margin-top: 15%;
   }
 
-  .cont img {
- width: 250px;
- height: 250px;
-}
-.adj h5 {
-  
-  font-size: 30px;
-}
 
-.adj i {
-  color: var(--dark);
-  font-size: 30px;
-}
+
+
+
 
 }
 
