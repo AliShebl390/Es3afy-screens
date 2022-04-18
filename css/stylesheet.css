@@ -1577,13 +1577,13 @@ body {
   font-size: 16px;
   width: fit-content;
   outline: transparent;
-  background-color: transparent !important;
+  
 }
 .profile-input:enabled{
   background-color: transparent;
 }
 .profile-section2 input:focus {
-  background-color: transparent !important;
+  background-color: transparent ;
 }
 /*paramedic home*/
 
