@@ -127,7 +127,8 @@ a:active {
 
 .cont img {
 
-  max-width: 60%;
+  width: 300px;
+  height: 300px;
 
 }
 
