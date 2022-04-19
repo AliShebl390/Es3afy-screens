@@ -184,7 +184,7 @@ a:active {
 .sign-up-h1 {
   text-align: center;
   cursor: pointer;
-  margin-bottom: 6vh;
+  margin-bottom: 3vh;
   transition: all 1s ease-in;
   font-size: 28px;
 }
