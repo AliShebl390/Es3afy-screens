@@ -175,7 +175,7 @@ a:active {
 .sign-up{ 
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 15%;
     transform: translateX(-50%); 
     height: 100vh;
     display: flex;
@@ -194,7 +194,7 @@ a:active {
 
 
 .content-container-2{
-    top: 31%;
+    top: 21%;
     height: 100vh;
     width: 100%;
     text-align: center;
