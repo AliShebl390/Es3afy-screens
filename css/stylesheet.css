@@ -16,7 +16,7 @@
   font-weight: bold;
   text-transform: capitalize;
 }
-.input-custom{
+.input-custom {
   height: 41px;
   width: 200px;
   padding-left: 10px;
@@ -118,7 +118,7 @@ a:active {
   /* gap: 50px; */
   font-weight: 700;
 }
-.cont h3{
+.cont h3 {
   align-self: center;
   padding: 5px;
 }
@@ -155,224 +155,207 @@ a:active {
 }
 /*End choose user*/
 /* Start sign-up/in -- forget reset password*/
-.container{
-    
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-
-
-.content-container{
-    width: 100%;
-    height: 100%;
-    position: relative; 
-    color: #222831;
+.content-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #222831;
 }
 
-.sign-up{ 
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    transform: translateX(-50%); 
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+.sign-up {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
-.sign-up-h1{
-    text-align: center;
-    cursor: pointer;;
-    margin-bottom: 3vh;
-    transition: all 1s ease-in;
-    font-size: 28px;
+.sign-up-h1 {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 3vh;
+  transition: all 1s ease-in;
+  font-size: 28px;
 }
 
-
-.content-container-2{
-    top: 21%;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    border-radius: 60% / 10%;
-    background-color: #222831;
-    transform: translateY(70%);
-    transition: transform 1s ease-in;
+.content-container-2 {
+  top: 21%;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  border-radius: 60% / 10%;
+  background-color: #222831;
+  transform: translateY(70%);
+  transition: transform 1s ease-in;
 }
 
-.content-container-3{
-    width: 100%;
-    height: 100%;
-    position: relative;
+.content-container-3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.inputs-container{
-    width: 400px;
-    height: 40vh;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-
+.inputs-container {
+  width: 400px;
+  height: 40vh;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
-
-.sign-in{
-    height:50%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
+.sign-in {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
-.sign-in-h1{
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 100%;
-    color: #eee;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 1s ease-in-out;
-    cursor: pointer;
-    padding-top: 2vh;
-    font-size: 28px;
+.sign-in-h1 {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  color: #eee;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+  padding-top: 2vh;
+  font-size: 28px;
 }
 
-.h1-scale{
-    transform: scale(1.4);
+.h1-scale {
+  transform: scale(1.4);
 }
 
-
-.sign-active{
-    transform: translateY(0);
+.sign-active {
+  transform: translateY(0);
 }
 
-
-input:focus{
-    border-color: none !important;
+input:focus {
+  border-color: none !important;
 }
 
-.forget-password{
-    text-decoration: none;
-    color: white;
+.forget-password {
+  text-decoration: none;
+  color: white;
 }
 
-.container-fp{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+.container-fp {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
-.content-fp{
-width: 50vw;
-height: 80vh;
-background-color: #eee;
-position: absolute;
-top: 10%;
-left: 50%;
-transform: translateX(-50%);
-}
-
-.header{
-    
-    padding: 1rem;
-    text-align: left;
-    display: flex;
-    gap: 5px;
-    cursor: pointer;
+.content-fp {
+  width: 50vw;
+  height: 80vh;
+  background-color: #eee;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.main{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.header {
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .main p {
-    font-size: 12px;
-    text-align: left;
+  font-size: 12px;
+  text-align: left;
 }
-.main input{
-    display: block;
-
-}
-
-.main button{
-    width: 100%;
-    
-}
-.container-rp{
-    width: 100vw;
-    height: 100vh;
-   
-}
-.content-rp{
-    width: 50vw;
-    height: 80vh;
-    background-color: #eee;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.content-rp i{
-    font-size: 70px;
-    
-}
-.content-rp:first-of-type p{
-    font-size: 12px;
-    text-align: center;
-}
-.content-rp button{
-    font-size: 14px;
-}
- .container-rp p:last-child{
-    position: absolute;
-    bottom: 10%;
-    text-align: center;
-} 
-.container-rp p:last-child span{
-    color: #00ADb5;
-}
-.adjust{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.adjust-2{
-    display: flex;
-}
-.adjust-2 i{
-    transform: translate(-110%,20%);
-
-}
-a{
-    text-decoration: none;
-    color: #222831;
+.main input {
+  display: block;
 }
 
+.main button {
+  width: 100%;
+}
+.container-rp {
+  width: 100vw;
+  height: 100vh;
+}
+.content-rp {
+  width: 50vw;
+  height: 80vh;
+  background-color: #eee;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.content-rp i {
+  font-size: 70px;
+}
+.content-rp:first-of-type p {
+  font-size: 12px;
+  text-align: center;
+}
+.content-rp button {
+  font-size: 14px;
+}
+.container-rp p:last-child {
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+}
+.container-rp p:last-child span {
+  color: #00adb5;
+}
+.adjust {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.adjust-2 {
+  display: flex;
+}
+.adjust-2 i {
+  transform: translate(-110%, 20%);
+}
+a {
+  text-decoration: none;
+  color: #222831;
+}
 
 /* End Forget pass */
 /* Start Creat new password */
@@ -531,7 +514,7 @@ a{
   font-size: 1rem;
   font-weight: bold;
 }
-.n-id-container a:first-of-type{
+.n-id-container a:first-of-type {
   font-size: 24px;
   color: #222831;
 }
@@ -1213,14 +1196,13 @@ a{
   border-radius: 50%;
   left: 0;
 }
-.burger-menu-overlay{
+.burger-menu-overlay {
   height: 100vh;
   width: 20vw;
   position: fixed;
-  
-  right:  0;
+
+  right: 0;
   z-index: 100;
-  
 }
 .line {
   width: 100%;
@@ -1652,23 +1634,19 @@ body {
   font-size: 18px;
 }
 
-.profile-input  {
-  
+.profile-input {
   border: none;
   font-size: 16px;
   width: min-content;
-  background-color:#eee;
- 
-  
+  background-color: #eee;
 }
 /* .profile-input:enabled{
   background-color: transparent;
 }*/
 .profile-section2 input:focus {
-  background-color: #eee ;
+  background-color: #eee;
   outline: none;
-} 
-
+}
 
 /*paramedic home*/
 
@@ -1760,7 +1738,6 @@ body {
   margin-top: auto;
   display: flex;
   gap: 10px;
-  
 }
 .request-section3 {
   display: flex;
@@ -2171,10 +2148,7 @@ th {
   font-size: 14px;
 }
 
-
-
-
-.profile-overlay{
+.profile-overlay {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -2184,14 +2158,13 @@ th {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:18px;
-
+  gap: 18px;
 }
 
-.profile-overlay h1{
+.profile-overlay h1 {
   color: var(--light);
 }
 
-.profile-overlay-active{
+.profile-overlay-active {
   display: flex;
 }
