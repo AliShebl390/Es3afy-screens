@@ -160,6 +160,7 @@ a:active {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  
 }
 
 .content-container {
@@ -167,6 +168,8 @@ a:active {
   height: 100%;
   position: relative;
   color: #222831;
+  
+
 }
 
 .sign-up {
@@ -177,8 +180,10 @@ a:active {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
+  
+
 }
 
 .sign-up-h1 {
@@ -187,6 +192,7 @@ a:active {
   margin-bottom: 3vh;
   transition: all 1s ease-in;
   font-size: 28px;
+  align-self: center;
 }
 
 .content-container-2 {
