@@ -1,4 +1,4 @@
-var cacheName = "ES3AFY";
+var cacheName = "ES3AFY-";
 var filesToCache = ["/", "/index.html", "/css/stylesheet.css", "/js/main.js"];
 
 /* Start the service worker and cache all of the app's content */
