@@ -25,6 +25,7 @@ const bar3 = document.getElementById("bar3");
 const bar2 = document.getElementById("bar2");
 const nav = document.querySelector(".nav");
 const background = document.querySelector(".background");
+  const burgerMenuOverlay = document.querySelector(".burger-menu-overlay");
 
 burgerMenuContainer.addEventListener("click", function () {
   bar1.classList.toggle("line1-transform");
@@ -34,3 +35,10 @@ burgerMenuContainer.addEventListener("click", function () {
   background.classList.toggle("background-display");
 });
 
+ burgerMenuOverlay.addEventListener("click", function () {
+   bar1.classList.remove("line1-transform");
+   bar3.classList.remove("line3-transform");
+   bar2.classList.remove("line2-opacity");
+   nav.classList.remove("nav-display");
+   background.classList.remove("background-display");
+ });
