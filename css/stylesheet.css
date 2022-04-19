@@ -16,7 +16,7 @@
   font-weight: bold;
   text-transform: capitalize;
 }
-.custom-input{
+.input-custom{
   height: 41px;
   width: 200px;
   padding-left: 10px;
@@ -201,7 +201,7 @@ a:active {
     position: absolute;
     border-radius: 60% / 10%;
     background-color: #222831;
-    transform: translateY(60%);
+    transform: translateY(70%);
     transition: transform 1s ease-in;
 }
 
