@@ -120,7 +120,7 @@ a:active {
 }
 .cont h3{
   align-self: center;
-  padding: 1rem;
+  padding: 5px;
 }
 .cont a:visited {
   outline: none;
