@@ -2,13 +2,16 @@
 @media screen and (min-width:320px) and (max-width:480px) {
   /* sign-up-in */
   .sign-up{
-    top: 4%;
+    top: 5px;
   }
   .content-container-2{
     top: 13%; 
     transform: translateY(65%);
     left: 0; 
     width: 100vw;
+  }
+  .content-container input{
+      height: 31px;
   }
 .sign-active{
   transform: translateY(0);
