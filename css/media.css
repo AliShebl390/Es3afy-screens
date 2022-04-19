@@ -3,6 +3,7 @@
   /* sign-up-in */
   .sign-up{
     top: 15px;
+    align-items: flex-start;
   }
   .content-container-2{
     top: 7.5%; 
