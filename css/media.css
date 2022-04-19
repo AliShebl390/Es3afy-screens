@@ -249,4 +249,29 @@
    width: 130px;
    height: 130px;
  }
+   .sign-up{
+    top: 15px;
+  }
+  .sign-up-h1{
+    font-size: 16px;
+  }
+  .content-container{
+    font-size: 12px;
+  }
+  .content-container-2{
+    top: 10%; 
+    transform: translateY(75%);
+    left: 0; 
+    width: 100vw;
+  }
+  .content-container input{
+      height: 31px;
+  }
+  .sign-up{
+    gap: 8px;
+  }
+  
+.sign-active{
+  transform: translateY(0);
+}
 }
