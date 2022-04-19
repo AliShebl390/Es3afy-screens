@@ -2171,6 +2171,14 @@ th {
 .profile-overlay h1 {
   color: var(--light);
 }
+.profile-overlay i{
+  position: absolute;
+  left: 95%;
+  top: 1%;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
 
 .profile-overlay-active {
   display: flex;
