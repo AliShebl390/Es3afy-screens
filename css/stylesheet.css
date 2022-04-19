@@ -24,6 +24,9 @@
   border-radius: 5px;
   background-color: #dadada;
 }
+.go-back{
+  font-size: 28px;
+}
 /* End variables */
 /* Start Global Rules */
 * {
@@ -422,9 +425,7 @@ a {
   padding: 15px;
   height: 100vh;
 }
-.mh-header i {
-  font-size: 24px;
-}
+
 .mh-main {
   display: flex;
   flex-direction: column;
