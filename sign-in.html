@@ -15,6 +15,7 @@
     <!-- icon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo png.png"/>
     <!-- Js -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/media.css" />
     <!-- script -->
@@ -57,7 +58,7 @@
       
               <label for="gender">Gender</label>
    
-              <select name="gender" id="gender" style=" width: 217px; height: 34px; border: none; text-transform: capitalize; background: #dadada; border-radius: 5px;padding-left: 10px;">
+              <select name="gender" id="gender" class="input-custom">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
@@ -67,6 +68,7 @@
                     <a href="medical-history.html">
                       <button class="button-custom">Sign Up</button>
                     </a>
+                     <p>Already have an account ?<br> <span class="log-in">Log in</span>  </p> 
             </div>
 
            
@@ -100,9 +102,10 @@
        const signInH1 = document.querySelector(".sign-in-h1");
       const contentContainer2 = document.querySelector(".content-container-2");
       const SignUpH1 = document.querySelector(".sign-up-h1");
-      // const contentContainer = document.querySelector(".content-container");
+      const contentContainer = document.querySelector(".content-container");
+      const logIn = document.querySelector('.log-in')
 
-      contentContainer2.addEventListener("click", function () {
+      logIn.addEventListener("click", function () {
         contentContainer2.classList.add("sign-active");
         signInH1.classList.add("h1-scale");
         SignUpH1.classList.remove("h1-scale");

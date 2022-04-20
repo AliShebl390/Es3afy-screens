@@ -6,7 +6,7 @@
   }
   .content-container-2 {
     top: 7.5%;
-    transform: translateY(75%);
+    
     left: 0;
     width: 100vw;
   }
@@ -267,8 +267,8 @@
     font-size: 12px;
   }
   .content-container-2 {
-    top: 10%;
-    transform: translateY(75%);
+    top: 8.5%;
+    
     left: 0;
     width: 100vw;
   }

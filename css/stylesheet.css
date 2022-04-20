@@ -24,7 +24,7 @@
   border-radius: 5px;
   background-color: #dadada;
 }
-.go-back{
+.go-back {
   font-size: 32px;
 }
 /* End variables */
@@ -163,7 +163,6 @@ a:active {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  
 }
 
 .content-container {
@@ -171,8 +170,6 @@ a:active {
   height: 100%;
   position: relative;
   color: #222831;
-  
-
 }
 
 .sign-up {
@@ -186,13 +183,19 @@ a:active {
   align-items: center;
   
   gap: 15px;
-  
-
 }
-.sign-up label{
+.sign-up p span {
+  color: var(--light);
+  display: block;
+  padding-top: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sign-up label {
   align-self: flex-start;
 }
-.sign-up input{
+.sign-up input {
   align-self: flex-start;
 }
 
@@ -202,7 +205,6 @@ a:active {
   margin-bottom: 3vh;
   transition: all 1s ease-in;
   font-size: 28px;
-  
 }
 
 .content-container-2 {
@@ -212,7 +214,7 @@ a:active {
   position: absolute;
   border-radius: 60% / 10%;
   background-color: #222831;
-  transform: translateY(70%);
+  transform: translateY(100%);
   transition: transform 1s ease-in;
 }
 
@@ -1475,7 +1477,6 @@ body {
   gap: 10px;
 }
 
-
 .rating-container {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
   display: flex;
@@ -2176,7 +2177,7 @@ th {
 .profile-overlay h1 {
   color: var(--light);
 }
-.profile-overlay i{
+.profile-overlay i {
   position: absolute;
   left: 95%;
   top: 1%;
