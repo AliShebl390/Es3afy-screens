@@ -27,7 +27,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/logo png.png"
+      href="images/Untitled-1.png"
     />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/media.css" />
@@ -39,7 +39,7 @@
     />
   </head>
 
-  <body style="overflow-y: scroll;">
+  <body style="overflow-y: scroll; overflow-x: hidden">
     <div class="profile-overlay">
       <h1>Edit your account</h1>
       <i class="fas fa-times close-profile-overlay"></i>
@@ -59,9 +59,25 @@
     </div>
 
     <div class="profile-container">
-      <div class="profile-section1">
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        "
+        class=""
+      >
+        <div class="profile-pic-div">
+          <img
+            id="profile-pic"
+            src="/images/vecteezy_user-icon-flat-design-isolated-on-white-background_.jpg"
+            alt=""
+          />
+          <input type="file" id="file" />
+          <label for="file" id="upload-btn"> choose file </label>
+        </div>
         <i id="edit-icon" class="fas fa-edit ed"></i>
-        <img src="/images/person.jpg" alt="" />
       </div>
 
       <div class="profile-section2">
@@ -114,7 +130,7 @@
       const mobile = document.querySelector(".mobile");
       const email = document.querySelector(".email");
       const overlaySubmit = document.querySelector(".overlay-submit");
-      const closeIcon = document.querySelector('.close-profile-overlay')
+      const closeIcon = document.querySelector(".close-profile-overlay");
       edd.addEventListener("click", function () {
         profileOverlay.classList.toggle("profile-overlay-active");
         firstNameInput.value = firstName.innerHTML;
@@ -129,9 +145,25 @@
         mobile.innerHTML = mobileInput.value;
         email.innerHTML = emailInput.value;
       });
-      closeIcon.addEventListener('click',function(){
-                profileOverlay.classList.toggle("profile-overlay-active");
-      })
+      closeIcon.addEventListener("click", function () {
+        profileOverlay.classList.toggle("profile-overlay-active");
+      });
+
+      const profilePicDiv = document.querySelector(".profile-pic-div");
+      const uploadBtn = document.querySelector("#upload-btn");
+      const file = document.querySelector("#file");
+      const profilePic = document.querySelector("#profile-pic");
+
+      file.addEventListener("change", function () {
+        const choosedFile = this.files[0];
+        if (choosedFile) {
+          const reader = new FileReader();
+          reader.addEventListener("load", function () {
+            profilePic.setAttribute("src", reader.result);
+          });
+          reader.readAsDataURL(choosedFile);
+        }
+      });
     </script>
   </body>
 </html>

@@ -175,7 +175,7 @@ a:active {
 .sign-up {
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 5%;
   transform: translateX(-50%);
   height: 100vh;
   display: flex;
@@ -208,7 +208,7 @@ a:active {
 }
 
 .content-container-2 {
-  top: 21%;
+  top: 11%;
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -1617,25 +1617,11 @@ body {
   gap: 60px;
 }
 
-.profile-section1 {
-  display: flex;
-  position: relative;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-}
 
-.profile-section1 img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-}
 
-.profile-section1 i {
+.ed {
   position: absolute;
-  bottom: 0;
-  transform: translateX(-250%);
+  transform: translate(400%,-300%);
   font-size: 24px;
 }
 
@@ -1643,7 +1629,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-left: 15px;
+  padding-left: 1rem;
   font-size: 18px;
 }
 
@@ -2188,4 +2174,36 @@ th {
 
 .profile-overlay-active {
   display: flex;
+}
+
+.profile-pic-div{
+  width: 200px;
+  height: 200px;
+ 
+  position: relative;
+  
+  border-radius: 50%;
+  overflow: hidden;
+}
+#profile-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#file{
+ display: none;
+}
+
+#upload-btn{
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,20%);
+  text-align: center;
+   background-color: #8c8c8cb0;
+  color: white;
+  font-size: 16px;
 }
