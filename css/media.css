@@ -2,11 +2,9 @@
   /* sign-up-in */
   .sign-up {
     top: 15px;
-    
   }
   .content-container-2 {
     top: 7.5%;
-    
     left: 0;
     width: 100vw;
   }
@@ -24,7 +22,13 @@
     font-size: 32px;
   }
 
- 
+  .sign-up p {
+    font-size: 12px;
+  }
+
+  .history-body {
+    overflow: hidden;
+  }
 
   /*home*/
   .emergency-section img {
@@ -45,8 +49,8 @@
   }
   /*responders on the way */
   .responders-main img {
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
     margin-top: 5%;
   }
 
@@ -98,11 +102,12 @@
   }
   .history-main {
     transform: translateX(0);
-    top: 33%;
+    top: 3%;
     width: 100vw;
     margin-bottom: 0;
     padding: 0;
-    padding-top: 30px;
+    margin-top: 20%;
+    height: 78vh;
   }
   .history-header {
     flex-direction: column;
@@ -210,16 +215,25 @@
   .request-section2 {
     justify-content: center;
   }
+  .history-body {
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .request-section2 {
     justify-content: center;
   }
+  .history-body {
+    overflow-y: scroll;
+  }
 }
 @media screen and (min-width: 1201px) {
   .request-section2 {
     justify-content: center;
+  }
+  .history-body {
+    overflow-y: scroll;
   }
 }
 
@@ -268,7 +282,7 @@
   }
   .content-container-2 {
     top: 8.5%;
-    
+
     left: 0;
     width: 100vw;
   }
@@ -282,7 +296,7 @@
   .sign-active {
     transform: translateY(0);
   }
-    .sos-contact,
+  .sos-contact,
   .sos-contact1,
   .sos-contact2,
   .sos-contact3,

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Es3afy</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/Untitled-1.png"
+    />
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="admin-header">
+      <!-- <div class="admin-header-section1">
+        <input class="search-input" type="text" />
+        <i class="fas fa-search search-icon"></i>
+      </div> -->
+      <div class="admin-header-section2">
+        <img src="/images/person.jpg" alt="" />
+        <h4>cillian murphy</h4>
+      </div>
+    </div>
+    <div class="admin-sidebar">
+      <div class="sidebar-content">
+        <img src="/images/logo png.png" alt="" />
+        <div class="center">
+          <a style="color: var(--light)" href="#">
+            <i class="fas fa-home"></i>
+          </a>
+          <a style="color: var(--light)" href="History-main.html">
+            <i class="fas fa-history"></i>
+          </a>
+          <i class="fas fa-user-plus add-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div style="overflow-x: auto" class="admin-container">
+             <div style="display: flex;justify-content: space-around;margin-bottom: 40px;">
+      
+      <a href="adminHome.html">
+
+          <h1>paramedicals</h1>
+      </a>
+        <h1>U<span class="header-span">ser</span>s</h1>
+      </div>
+      <table class="list" id="employeeList">
+        <tr>
+          <th>Photo</th>
+          <th>Full Name</th>
+          <th>Mobile</th>
+          <th>National ID</th>
+          <th>Email</th>
+          
+          <th>Operations</th>
+        </tr>
+        <tr>
+          <td><img src="../images/person.jpg" style="width: 50px;height: 50px;object-fit: cover;border-radius: 5px;" alt=""></td>
+          <td>ahmed yasser</td>
+          <td>01223342432</td>
+          <td style="color: var(--light);" class="view-national-id">view</td>
+          <td>email@example@gmail.com</td>
+          
+          <td>
+         
+            <i
+              onClick="onDelete(this);"
+              style="color: red"
+              class="fas fa-trash"
+            ></i>
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  
+
+<div class="national-id-overlay">
+    <div class="national-id-overlay-content" style="display: none;">
+        <i class="fas fa-times hide-national-id-overlay">
+        </i>
+        <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
+        <img src="../images/vecteezy_national-identification-card-falt-design-isolated-in-white_.jpg" alt="">
+    </div>
+</div>
+     
+
+  </body>
+  <script>
+    // const searchIcon = document.querySelector(".search-icon");
+    // const searchInput = document.querySelector(".search-input");
+    // const searchContainer = document.querySelector(".admin-header-section1");
+    // searchIcon.addEventListener("click", function () {
+    //   searchContainer.classList.toggle("show");
+    //   searchInput.focus();
+    // });
+
+
+  const viewNationalId = document.querySelector('.view-national-id')
+  const hideNationaIdOverlay = document.querySelector('.hide-national-id-overlay')
+   const nationalIdOverlay = document.querySelector('.national-id-overlay')
+   const nationalIdOverlayContent = document.querySelector('.national-id-overlay-content')
+
+  viewNationalId.addEventListener('click',()=>{
+      nationalIdOverlay.style.display = "block"
+      nationalIdOverlayContent.style.display = "flex"
+   })
+   hideNationaIdOverlay.addEventListener('click',()=>{
+       nationalIdOverlay.style.display = "none"
+      nationalIdOverlayContent.style.display = "flex"
+
+   })
+ </script>
+</html>

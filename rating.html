@@ -46,17 +46,18 @@
       <h1>rate this request</h1>
     </div>
     <div class="rating-container">
+      <input class="rating-counter" value="0" style="border: none;">
       <div class="feedback">
         <div class="rating">
-          <input type="radio" name="rating" id="rating-5" />
+          <input type="radio" name="rating" id="rating-5" class="rating-stars" />
           <label for="rating-5"></label>
-          <input type="radio" name="rating" id="rating-4" />
+          <input type="radio" name="rating" id="rating-4" class="rating-stars" />
           <label for="rating-4"></label>
-          <input type="radio" name="rating" id="rating-3" />
+          <input type="radio" name="rating" id="rating-3" class="rating-stars" />
           <label for="rating-3"></label>
-          <input type="radio" name="rating" id="rating-2" />
+          <input type="radio" name="rating" id="rating-2" class="rating-stars" />
           <label for="rating-2"></label>
-          <input type="radio" name="rating" id="rating-1" />
+          <input type="radio" name="rating" id="rating-1" class="rating-stars" />
           <label for="rating-1"></label>
           <div class="emoji-wrapper">
             <div class="emoji">
@@ -366,21 +367,20 @@
       />
       <button class="button-custom rating-button">send</button>
     </div>
-
     <script>
-      const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".co");
-      const editBtn = document.querySelector(".edit");
-      btn.onclick = () => {
-        widget.style.display = "none";
-        post.style.display = "block";
-        editBtn.onclick = () => {
-          widget.style.display = "block";
-          post.style.display = "none";
-        };
-        return false;
-      };
+
+      let stars = document.querySelectorAll('.rating-stars');
+      const counter = document.querySelector('.rating-counter');
+      let starss = [...stars]
+      starss.reverse();
+      for (let i = 0; i < starss.length; i++) {
+        starss[i].addEventListener('click',()=>{
+          counter.value=`${i + 1}`
+          console.log(counter.value)
+        })
+        
+      }
+     
     </script>
   </body>
 </html>

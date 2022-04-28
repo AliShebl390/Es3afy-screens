@@ -42,7 +42,7 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
   background-color: #eee;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 input:focus::placeholder {
   color: transparent;
@@ -181,7 +181,7 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   gap: 15px;
 }
 .sign-up p span {
@@ -317,7 +317,13 @@ input:focus {
   text-align: left;
 }
 .main input {
-  display: block;
+  height: 41px;
+  width: 200px;
+  font-size: 1rem;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dadada;
 }
 
 .main button {
@@ -364,11 +370,18 @@ input:focus {
   flex-direction: column;
   gap: 10px;
 }
+
+.adjust h3{
+  text-transform: capitalize;
+}
+
 .adjust-2 {
   display: flex;
 }
 .adjust-2 i {
-  transform: translate(-110%, 20%);
+  transform: translate(-134%, 30%);
+  font-size: 18px;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -425,9 +438,6 @@ a {
 .adjust-2 {
   display: flex;
 }
-.adjust-2 i {
-  transform: translate(-110%, 20%);
-}
 /* End Creat password */
 /*Start of medical history*/
 .mh-container {
@@ -435,21 +445,50 @@ a {
   height: 100vh;
 }
 
-.mh-main {
+.mh-main form{
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
   padding: 1.5rem;
 }
+.mh-main span{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
 .section-1 {
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.section-1 span {
-  transform: translateY(25%);
+.section-1 label{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
 }
+
+.section-1 select{
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dadada;
+  max-width: 300px;
+}
+.section-1 select option{
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
 .section-1 img {
-  max-width: 15%;
+  width: 100px;
+  height: 100px;
   transform: translateY(30%);
+  margin-bottom: 10px;
 }
 .section-1 i {
   padding-left: 10px;
@@ -461,8 +500,128 @@ a {
 }
 .mh-main a {
   margin: 0 auto;
+  display: flex;
+  justify-content: center
+}
+.allerrgies-container {
+  display: flex;
+  width: 100vw;
+}
+.new {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
+.allerrgies-list button {
+  outline: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 8px;
+}
+.allerrgies-add-button {
+  padding: 8px;
+  border: solid 1px #47cf73;
+  transform: translateY(-7%);
+}
+.allerrgies-add-button i {
+  font-size: 18px;
+  transform: translateX(-17%);
+  color: #47cf73;
+}
+
+.allerrgies-list i {
+  font-size: 16px;
+  transform: translateX(-17%);
+  color: red;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.surgeries-container {
+  display: flex;
+  width: 100vw;
+}
+
+.surgeries-list button {
+  outline: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 8px;
+}
+.surgeries-add-button {
+  padding: 8px;
+  border: solid 1px #47cf73;
+  transform: translateY(-7%);
+}
+.surgeries-add-button i {
+  font-size: 18px;
+  transform: translateX(-17%);
+  color: #47cf73;
+}
+
+.surgeries-list i {
+  font-size: 16px;
+  transform: translateX(-17%);
+  color: red;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.chronic-list button {
+  outline: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 8px;
+}
+.chronic-add-button {
+  padding: 8px;
+  border: solid 1px #47cf73;
+  transform: translateY(-7%);
+}
+.chronic-add-button i {
+  font-size: 18px;
+  transform: translateX(-17%);
+  color: #47cf73;
+}
+
+.chronic-list i {
+  font-size: 16px;
+  transform: translateX(-15%);
+  color: red;
+}
+
+.medications-list button {
+  outline: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 8px;
+}
+.medications-add-button {
+  padding: 8px;
+  border: solid 1px #47cf73;
+  transform: translateY(-7%);
+}
+.medications-add-button i {
+  font-size: 18px;
+  transform: translateX(-17%);
+  color: #47cf73;
+}
+
+.medications-list i {
+  font-size: 16px;
+  transform: translateX(-17%);
+  color: red;
+}
 /* End of medical history */
 /* Start of naitonal id */
 .n-id-container i {
@@ -492,15 +651,9 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.n-id-container .ic-text i {
-  font-size: 13rem;
-}
+
 .n-id-container .ic-text p {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 30px;
+  padding-top: 10px;
 }
 .n-id-container .buttons {
   display: flex;
@@ -560,6 +713,7 @@ a {
 .front::before {
   content: "Photo Of A Front";
 }
+
 /* End National id */
 /* Start Verification */
 .ver-container {
@@ -850,10 +1004,12 @@ a {
 /* End Get in touch */
 /* Start sos contact */
 /* start s-c main */
+
 .s-main-container .s-main-header {
   padding: 15px;
   display: flex;
   justify-content: space-between;
+ 
   /* margin-bottom: 50vh; */
 }
 .s-main-container .s-main-content .main-c {
@@ -1520,7 +1676,7 @@ body {
 .rating > input:checked ~ label,
 .rating > input:checked ~ label ~ label {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
-}
+} 
 
 .rating > input:not(:checked) ~ label:hover,
 .rating > input:not(:checked) ~ label:hover ~ label {
@@ -1607,6 +1763,9 @@ body {
   padding: 0.5rem;
 }
 
+.rating-counter{
+   display: none;
+}
 /*profile*/
 
 .profile-container {
@@ -1617,11 +1776,9 @@ body {
   gap: 60px;
 }
 
-
-
 .ed {
   position: absolute;
-  transform: translate(400%,-300%);
+  transform: translate(400%, -300%);
   font-size: 24px;
 }
 
@@ -1646,6 +1803,101 @@ body {
   background-color: #eee;
   outline: none;
 }
+.profile-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark);
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.profile-overlay h1 {
+  color: var(--light);
+}
+.profile-overlay i {
+  position: absolute;
+  left: 95%;
+  top: 1%;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-overlay-active {
+  display: flex;
+}
+
+.profile-pic-div {
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+#profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#file {
+  display: none;
+}
+
+#upload-btn {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  text-align: center;
+  background-color: #8c8c8cb0;
+  color: white;
+  font-size: 16px;
+}
+
+.profile-pic-div-id {
+  width: 80vw;
+  height: 200px;
+
+  position: relative;
+
+  align-items: center;
+  overflow: hidden;
+}
+#profile-pic-id {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#file-id {
+  display: none;
+}
+
+#upload-btn-id {
+  height: 40px;
+  width: 100%;
+
+  color: white;
+  background-color: var(--light);
+  width: 150px;
+  height: 41px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+}
+
 
 /*paramedic home*/
 
@@ -1943,6 +2195,7 @@ th {
   left: 50%;
   transform: translateX(-50%);
   top: 15%;
+  margin-left: 20px;
 }
 td {
   padding-top: 15px;
@@ -1958,6 +2211,8 @@ table {
 td,
 th {
   text-align: center;
+  padding-left: 20px;
+
 }
 
 .admin-sidebar {
@@ -2107,6 +2362,8 @@ th {
   display: flex;
   flex-direction: column;
   border-radius: 5%;
+  position: relative;
+  cursor: pointer;
 }
 .rides-section1 {
   margin-bottom: 10px;
@@ -2147,63 +2404,74 @@ th {
   font-size: 14px;
 }
 
-.profile-overlay {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--dark);
-  z-index: 1;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-}
-
-.profile-overlay h1 {
-  color: var(--light);
-}
-.profile-overlay i {
-  position: absolute;
-  left: 95%;
-  top: 1%;
-  font-size: 32px;
-  color: white;
-  cursor: pointer;
-}
-
-.profile-overlay-active {
-  display: flex;
-}
-
-.profile-pic-div{
-  width: 200px;
-  height: 200px;
- 
-  position: relative;
-  
-  border-radius: 50%;
-  overflow: hidden;
-}
-#profile-pic{
+.feedback-overlay{
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
+  position: absolute;
+  background-color: #222831;
+  left: 0;
+  top: 0;
+  border-radius: 5%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: white;
+  display: none;
+  cursor: pointer;
+ 
 }
-#file{
- display: none;
+.feedback-overlay h1{
+  padding-bottom: 3%;
+  padding-top: 5%;
+}
+.feedback-overlay i {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-150%);
+  font-size: 32px;
+  top: 5px;
+}
+.national-id-overlay{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #222831;
+  z-index: 1;
+  display: none;
+}
+.national-id-overlay div{
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 
-#upload-btn{
-  height: 40px;
-  width: 100%;
+.national-id-overlay div i {
+  font-size: 32px;
+  color: #222831;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%,20%);
-  text-align: center;
-   background-color: #8c8c8cb0;
-  color: white;
-  font-size: 16px;
+  left: 100%;
+  top: 0;
+  transform: translateX(-120%);
+  cursor: pointer;
+  
+}
+
+.national-id-overlay div img{
+  width: 50%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.view-national-id{
+  cursor: pointer;
 }

@@ -46,8 +46,7 @@
       <input class="overlay-input-firstname input-custom" type="text" />
       <input class="overlay-input-lastname input-custom" type="text" />
       <input class="overlay-input-mobile input-custom" type="text" />
-      <input class="overlay-input-email input-custom" type="text" />
-      <button class="button-custom overlay-submit">submit</button>
+      <button class="button-custom overlay-submit">Save changes</button>
     </div>
     <div class="rating-header">
       <a href="home.html">
@@ -124,7 +123,6 @@
       const firstNameInput = document.querySelector(".overlay-input-firstname");
       const lastNameInput = document.querySelector(".overlay-input-lastname");
       const mobileInput = document.querySelector(".overlay-input-mobile");
-      const emailInput = document.querySelector(".overlay-input-email");
       const firstName = document.querySelector(".first-name");
       const lastName = document.querySelector(".last-name");
       const mobile = document.querySelector(".mobile");
@@ -136,14 +134,12 @@
         firstNameInput.value = firstName.innerHTML;
         lastNameInput.value = lastName.innerHTML;
         mobileInput.value = mobile.innerHTML;
-        emailInput.value = email.innerHTML;
       });
       overlaySubmit.addEventListener("click", function () {
         profileOverlay.classList.toggle("profile-overlay-active");
         firstName.innerHTML = firstNameInput.value;
         lastName.innerHTML = lastNameInput.value;
         mobile.innerHTML = mobileInput.value;
-        email.innerHTML = emailInput.value;
       });
       closeIcon.addEventListener("click", function () {
         profileOverlay.classList.toggle("profile-overlay-active");

@@ -49,15 +49,21 @@
         </a>
       </div>
       <div class="ic-text">
-        <i class="fas fa-portrait"></i>
-        <p></p>
-        <p>Finally we just need a selfie of you</p>
+    <div class="profile-pic-div-id">
+          <img
+            id="profile-pic-id"
+            src="/images/vecteezy_face-identification-id-biometrical-people-recognition-safety_3490693.jpg"
+            alt=""
+            />
+            
+          </div>
+          <p>Finally we just need a selfie of you</p>
       </div>
       <div class="n-id-bottom">
         <div class="buttons">
           <div class="bt1">
-            <i class="fas fa-upload"></i>
-            <input type="file" class="custom-file-input" />
+           <input type="file" id="file-id" />
+          <label for="file-id" id="upload-btn-id"> choose file </label>
           </div>
           <div class="bt2">
             <a href="Verification.html">
@@ -67,5 +73,22 @@
         </div>
       </div>
     </div>
+    <script>
+              const profilePicDiv = document.querySelector(".profile-pic-div-id");
+      const uploadBtn = document.querySelector("#upload-btn-id");
+      const file = document.querySelector("#file-id");
+      const profilePic = document.querySelector("#profile-pic-id");
+
+      file.addEventListener("change", function () {
+        const choosedFile = this.files[0];
+        if (choosedFile) {
+          const reader = new FileReader();
+          reader.addEventListener("load", function () {
+            profilePic.setAttribute("src", reader.result);
+          });
+          reader.readAsDataURL(choosedFile);
+        }
+      });
+    </script>
   </body>
 </html>

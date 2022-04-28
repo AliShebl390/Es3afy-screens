@@ -32,7 +32,7 @@
       href="images/Untitled-1.png"
     />
   </head>
-  <body>
+  <body style="overflow-y: scroll;">
     <div class="n-id-container">
       <a href="medical-history.html">
         <i class="fas fa-arrow-alt-left go-back"></i>
@@ -49,17 +49,24 @@
         </a>
       </div>
       <div class="ic-text">
-        <i class="fas fa-address-card"></i>
+          <div class="profile-pic-div-id">
+          <img
+            id="profile-pic-id"
+            src="/images/istockphoto-612650934-612x612.jpg"
+            alt=""
+          />
+          
+        </div>
         <p>
-          Please Provide A Photo Of The <br />
-          Front side Of Your Nacional ID
-        </p>
+      Please provide a photo of the <br />
+      front side of your national ID
+    </p>
       </div>
       <div class="n-id-bottom">
         <div class="buttons">
           <div class="bt1">
-            <i class="fas fa-upload"></i>
-            <input type="file" class="custom-file-input front" />
+           <input type="file" id="file-id" />
+          <label for="file-id" id="upload-btn-id"> choose file </label>
           </div>
           <div class="bt2">
             <a href="naitonal-id-back.html">
@@ -69,5 +76,22 @@
         </div>
       </div>
     </div>
+    <script>
+              const profilePicDiv = document.querySelector(".profile-pic-div-id");
+      const uploadBtn = document.querySelector("#upload-btn-id");
+      const file = document.querySelector("#file-id");
+      const profilePic = document.querySelector("#profile-pic-id");
+
+      file.addEventListener("change", function () {
+        const choosedFile = this.files[0];
+        if (choosedFile) {
+          const reader = new FileReader();
+          reader.addEventListener("load", function () {
+            profilePic.setAttribute("src", reader.result);
+          });
+          reader.readAsDataURL(choosedFile);
+        }
+      });
+    </script>
   </body>
 </html>

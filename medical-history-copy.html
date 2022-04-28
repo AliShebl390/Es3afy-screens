@@ -13,18 +13,13 @@
     />
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+ 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Es3afy</title>
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/media.css" />
     <link
       rel="icon"
       type="image/png"
@@ -35,7 +30,7 @@
   <body style="overflow-y: scroll">
     <div class="mh-container">
       <div class="mh-header">
-        <a href="home.html">
+        <a href="sign-in.html">
           <i class="fas fa-arrow-alt-left go-back"></i>
         </a>
         <h1><span class="header-span">me</span>dical history</h1>
@@ -44,75 +39,227 @@
         <div class="section-1">
           <img src="/images/doctor.png" alt="" />
           <span>surgeries</span>
-          <i class="fas fa-plus-square"></i>
           <div
             style="
-              margin-top: 25px;
+              margin-top: 30px;
+              width: 80vw;
               display: flex;
-              flex-direction: column;
+              align-items: center;
               gap: 10px;
             "
             class=""
           >
-            <input class="input-custom" />
+            <input class="input-custom surgeries-input" />
+            <button class="surgeries-add-button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </div>
+          <div style="margin-top: 25px" class="surgeries-container">
+            <ul class="surgeries-list"></ul>
           </div>
         </div>
 
         <div class="section-1">
           <img src="/images/head.png" alt="" />
           <span>Allerrgies</span>
-          <i class="fas fa-plus-square"></i>
           <div
             style="
-              margin-top: 25px;
+              margin-top: 30px;
+              width: 80vw;
               display: flex;
-              flex-direction: column;
+              align-items: center;
               gap: 10px;
             "
             class=""
           >
-            <input class="input-custom" />
+            <input class="input-custom allerrgies-input" />
+            <button class="allerrgies-add-button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </div>
+          <div style="margin-top: 25px" class="allerrgies-container">
+            <ul class="allerrgies-list"></ul>
           </div>
         </div>
-
         <div class="section-1">
           <img src="/images/disease.png" alt="" />
           <span>Chronic disease</span>
-          <i class="fas fa-plus-square"></i>
           <div
             style="
-              margin-top: 25px;
+              margin-top: 30px;
+              width: 80vw;
               display: flex;
-              flex-direction: column;
+              align-items: center;
               gap: 10px;
             "
             class=""
           >
-            <input class="input-custom" />
+         <input class="input-custom chronic-input" />
+            <button class="chronic-add-button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </div>
+          <div style="margin-top: 25px" class="chronic-container">
+            <ul class="chronic-list"></ul>
           </div>
         </div>
 
         <div class="section-1">
           <img src="/images/Medication.png" alt="" />
-          <span>Medication</span>
-          <i class="fas fa-plus-square"></i>
+          <span>Medications</span>
           <div
             style="
-              margin-top: 25px;
+              margin-top: 30px;
+              width: 80vw;
               display: flex;
-              flex-direction: column;
+              align-items: center;
               gap: 10px;
             "
             class=""
           >
-            <input class="input-custom" />
+             <input class="input-custom medications-input" />
+            <button class="medications-add-button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
           </div>
+          <div style="margin-top: 25px" class="medications-container">
+            <ul class="medications-list"></ul>
+          </div>
+          
         </div>
 
-        <a href="home.html">
-          <button class="button-custom">submit</button>
+        <a href="/home.html">
+          <button class="button-custom">Save changes</button>
         </a>
       </div>
     </div>
+    <script>
+      const surgeriesInput = document.querySelector(".surgeries-input");
+      const surgeriesButton = document.querySelector(".surgeries-add-button");
+      const surgeriesList = document.querySelector(".surgeries-list");
+
+      surgeriesButton.addEventListener("click", addSurgeries);
+
+      function addSurgeries(event) {
+        event.preventDefault();
+        const surgeriesDiv = document.createElement("div");
+        surgeriesDiv.classList.add("new");
+        const newSurgery = document.createElement("li");
+        newSurgery.innerText = surgeriesInput.value;
+        surgeriesDiv.appendChild(newSurgery);
+        const trashButton = document.createElement("button");
+        trashButton.classList.add("trash-btn");
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        surgeriesDiv.appendChild(trashButton);
+        surgeriesList.appendChild(surgeriesDiv);
+        surgeriesInput.value = "";
+      }
+
+      surgeriesList.addEventListener("click", deleteCheck);
+      function deleteCheck(e) {
+        const surgery = e.target;
+        if (surgery.classList[0] === "trash-btn") {
+          const surgery = surgery.parentElement;
+          surgery.remove();
+        }
+      }
+
+
+      const allerrgiesInput = document.querySelector(".allerrgies-input");
+      const allerrgiesButton = document.querySelector(".allerrgies-add-button");
+      const allerrgiesList = document.querySelector(".allerrgies-list");
+
+      allerrgiesButton.addEventListener("click", addAllerrgies);
+
+      function addAllerrgies(event) {
+        event.preventDefault();
+        const allerrgiesDiv = document.createElement("div");
+        allerrgiesDiv.classList.add("new");
+        const newAllerrgy = document.createElement("li");
+        newAllerrgy.innerText = allerrgiesInput.value;
+        allerrgiesDiv.appendChild(newAllerrgy);
+        const trashButton = document.createElement("button");
+        trashButton.classList.add("trash-btn");
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        allerrgiesDiv.appendChild(trashButton);
+        allerrgiesList.appendChild(allerrgiesDiv);
+        allerrgiesInput.value = "";
+      }
+
+      allerrgiesList.addEventListener("click", deleteCheck);
+      function deleteCheck(e) {
+        const allergy = e.target;
+        if (allergy.classList[0] === "trash-btn") {
+          const allerrgy = allergy.parentElement;
+          allerrgy.remove();
+        }
+      }
+
+
+      const chronicInput = document.querySelector(".chronic-input");
+      const chronicButton = document.querySelector(".chronic-add-button");
+      const chronicList = document.querySelector(".chronic-list");
+
+      chronicButton.addEventListener("click", addChronic);
+
+      function addChronic(event) {
+        event.preventDefault();
+        const chronicDiv = document.createElement("div");
+        chronicDiv.classList.add("new");
+        const newChronic = document.createElement("li");
+        newChronic.innerText = chronicInput.value;
+        chronicDiv.appendChild(newChronic);
+        const trashButton = document.createElement("button");
+        trashButton.classList.add("trash-btn");
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        chronicDiv.appendChild(trashButton);
+        chronicList.appendChild(chronicDiv);
+        chronicInput.value = "";
+      }
+
+      chronicList.addEventListener("click", deleteCheck);
+      function deleteCheck(e) {
+        const chronic = e.target;
+        if (chronic.classList[0] === "trash-btn") {
+          const chronicc = chronic.parentElement;
+          chronicc.remove();
+        }
+      }
+
+
+      const medicationsInput = document.querySelector(".medications-input");
+      const medicationsButton = document.querySelector(".medications-add-button");
+      const medicationsList = document.querySelector(".medications-list");
+
+      medicationsButton.addEventListener("click", addMedication);
+
+      function addMedication(event) {
+        event.preventDefault();
+        const medicationsDiv = document.createElement("div");
+        medicationsDiv.classList.add("new");
+        const newMedication = document.createElement("li");
+        newMedication.innerText = medicationsInput.value;
+        medicationsDiv.appendChild(newMedication);
+        const trashButton = document.createElement("button");
+        trashButton.classList.add("trash-btn");
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        medicationsDiv.appendChild(trashButton);
+       medicationsList.appendChild(medicationsDiv);
+        medicationsInput.value = "";
+      }
+
+      medicationsList.addEventListener("click", deleteCheck);
+      function deleteCheck(e) {
+        const medication = e.target;
+        if (medication.classList[0] === "trash-btn") {
+          const medicationn = medication.parentElement;
+          medicationn.remove();
+        }
+      }
+
+
+
+
+    </script>
   </body>
 </html>
